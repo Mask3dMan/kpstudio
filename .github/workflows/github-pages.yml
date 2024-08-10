@@ -26,6 +26,8 @@ jobs:
           gem install bundler
           bundle install
           npm install
+      - name: Check Installed NPM Packages
+        run: npm list --depth=0
 
       - name: Build Tailwind CSS
         run: npm run build:css
