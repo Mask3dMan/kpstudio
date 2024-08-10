@@ -1,5 +1,5 @@
 url: ''
-baseurl: ''
+baseurl: '/kpstudio/'
 title: 'Mateusz Cabizza is Kernel Panic Studio'
 
 plugins:
@@ -10,7 +10,7 @@ postcss:
   cache: false
 
 exclude:
-  - package.json
+  - package.jso
   - postcss.config.js
   - tailwind.config.js
   - node_modules
