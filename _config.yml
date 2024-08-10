@@ -7,6 +7,7 @@ destination: site
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
+  - ./_plugins/portfolio-generator.rb
 
 postcss:
   cache: false
