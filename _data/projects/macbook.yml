@@ -1,0 +1,27 @@
+url: macbook
+title: iMac to go
+description: I always wanted Apple to release
+imgs:
+- url: 0
+  alt:
+  aspect: wide
+- url: 1
+  alt:
+- url: 2
+  alt:
+- url: 3
+  alt:
+- url: 4
+  alt:
+- url: 5
+  alt:
+- url: 6
+  alt:
+  aspect: square
+
+tecnologies: 
+- blender
+- illustrator
+
+category:
+- 3D
