@@ -34,7 +34,7 @@ jobs:
         run: npm run build:css
 
       - name: Check Built CSS
-        run: ls -l assets/css
+        run: cat assets/css/main.css
 
       - name: Build Jekyll site
         run: bundle exec jekyll build
