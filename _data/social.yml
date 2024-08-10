@@ -1,0 +1,9 @@
+- name: linkedin
+  display: lnkdn
+  url: #
+- name: dribbble
+  display: drbbbl
+  url: #
+- name: instagram
+  display: ig
+  url: #

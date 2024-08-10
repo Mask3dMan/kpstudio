@@ -1,0 +1,23 @@
+url: mmachine
+title: The Memory Machine
+description: A modern instant camera project, modelled in blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos.
+imgs:
+- url: 0
+  alt:
+- url: 1
+  alt:
+- url: 2
+  alt:
+- url: 4
+  alt:
+- url: 3
+  alt:
+- url: 5
+  alt:
+
+tecnologies: 
+- blender
+- illustrator
+
+category:
+- 3D
