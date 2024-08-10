@@ -4,19 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "assets/css/style.css" | relative_url }}">
-    <link rel="stylesheet" href="{{ "assets/css/fonts.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/fonts.css' | relative_url }}">
     <link rel="icon" href="{{ 'assets/images/favicon/favicon32.png' | relative_url }}" sizes="32x32">
     <link rel="icon" href="{{ 'assets/images/favicon/favicon64.png' | relative_url }}" sizes="64x64">
     <link rel="icon" href="{{ 'assets/images/favicon/mobileicon2x.png' | relative_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ assets/images/favicon/mobileicon2x.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ 'assets/images/favicon/mobileicon2x.png' | relative_url }}">
+
     <meta name="theme-color" content="#DF8197">
     {% seo %}
-    <script src="/assets/js/main.js">
+    <script src="{{ '/assets/js/main.js' | relative_url }}">
     </script>
   </head>
-  <body class="scroll-smooth bg-[url('/assets/images/noise.png')] dark:bg-[url('/assets/images/noisedark.png')] bg-background dark:bg-background-dark text-primary font-sans animate-bggrain" onscroll="document.getElementById('menu').checked = false">
+  <body class="scroll-smooth bg-[url('{{ '/assets/images/noise.png' | relative_url }}')] dark:bg-[url('{{ '/assets/images/noisedark.png' | relative_url }}'
+  )] bg-background dark:bg-background-dark text-primary font-sans animate-bggrain" onscroll="document.getElementById('menu').checked = false">
     <div class="sm:grid sm:grid-cols-10">
       
       <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
@@ -29,7 +31,8 @@
       </label>
       {% if page.url != '/' %}
       <div class="sm:col-span-2 xl:col-span-3 sm:ml-10 ml-8 sm:mr-2 mt-8 sm:mt-16 max-w-44 sm:max-w-48 lg:mr-10">
-          <a href="/"><img draggable="false" class="z-10 top-16 sticky cursor-pointe" src="/assets/images/logosm.svg" alt="Mateusz Cabizza is Kernel panic studio"></a>
+          <a href="{{'/' | relative_url}}"><img draggable="false" class="z-10 top-16 sticky cursor-pointe" src="{{ '/assets/images/logosm.svg' | relative_url }}
+            " alt="Mateusz Cabizza is Kernel panic studio"></a>
       </div>
       <div class="transition-all sm:col-span-6 xl:col-span-5 mx-0 mt-[10vh] sm:mt-[20vh] peer-has-[:checked]:mt-[calc(10vh+14rem)]" >
         {{ content }}
@@ -48,10 +51,10 @@
         </nav>
       </div>
       {% if page.url == '/gallery.html' %}
-      <a href="/" class="z-50 ml-8 top-8 max-w-44 fixed cursor-pointer scale-y-0 peer-has-[:checked]:scale-y-100"><img draggable="false"  src="/assets/images/logosm.svg" alt="Mateusz Cabizza is Kernel panic studio"></a>
+      <a href="/" class="z-50 ml-8 top-8 max-w-44 fixed cursor-pointer scale-y-0 peer-has-[:checked]:scale-y-100"><img draggable="false"  src="{{ '/assets/images/logosm.svg' | relative_url }}" alt="Mateusz Cabizza is Kernel panic studio"></a>
       {% endif %}
       <div class="transition-all fixed h-[40rem] w-full top-0 left-0 origin-top scale-y-0 peer-has-[:checked]:scale-y-100  bg-background dark:bg-background-dark [mask-image:_linear-gradient(to_bottom,_black_55%,_transparent_100%)]">
-        <div class="h-full bg-[url('/assets/images/noise.png')] dark:bg-[url('/assets/images/noisedark.png')] animate-bggrain"></div>
+        <div class="h-full bg-[url('{{ '/assets/images/noise.png' | relative_url }}')] dark:bg-[url('{{ '/assets/images/noisedark.png' | relative_url }}')] animate-bggrain"></div>
         <!-- <div class="bg-gradient-to-b h-full dark:from-background-dark/90 from-background/90 to-transparent"></div> -->
       </div>
     </div>

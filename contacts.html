@@ -5,7 +5,7 @@ title: "Contacts"
 
 <div class="sm:mt-[20vh]">
   <div class="-z-10 relative sm:absolute sm:top-[30vh] left-0 h-12 animate-bgmovesm lg:animate-bgmove bg-repeat-x bg-contain lg:h-16 w-full landscapes:hidden
-   " style="background-image: url('/assets/images/wave pink.png')"></div>
+   " style="background-image: url('{{ '/assets/images/wave pink.png' | relative_url }}')"></div>
   <form action="https://formspree.io/f/{form_id}" method="post">
     <div class="flex flex-wrap gap-3 text-xl mt-10 mx-8 sm:mx-0">
       <div class="w-full">
@@ -24,6 +24,6 @@ title: "Contacts"
       <button class="lowercase bg-primary rounded-full py-2 px-4 mt-4 mb-10 text-background dark:text-background-dark shadow-lg shadow-primary/20 hover:bg-secondary hover:text-primary" type="submit">Submit</button>
     </div> 
   </form>
-  <div class="-z-10 absolute sm:top-[90vh] left-0 h-12 animate-bgslowsm lg:animate-bgslow bg-repeat-x bg-contain lg:h-16 w-full landscapes:hidden" style="background-image: url('../assets/images/wave lime.png')"></div>
+  <div class="-z-10 absolute sm:top-[90vh] left-0 h-12 animate-bgslowsm lg:animate-bgslow bg-repeat-x bg-contain lg:h-16 w-full landscapes:hidden" style="background-image: url('{{ '/assets/images/wave lime.png' | relative_url }}')"></div>
 </div>
 <div class="h-20 sm:h-0"></div>
