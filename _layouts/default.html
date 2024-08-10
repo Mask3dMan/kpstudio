@@ -17,8 +17,7 @@
     <script src="{{ '/assets/js/main.js' | relative_url }}">
     </script>
   </head>
-  <body class="scroll-smooth bg-[url('{{ '/assets/images/noise.png' | relative_url }}')] dark:bg-[url('{{ '/assets/images/noisedark.png' | relative_url }}'
-  )] bg-background dark:bg-background-dark text-primary font-sans animate-bggrain" onscroll="document.getElementById('menu').checked = false">
+  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="document.getElementById('menu').checked = false">
     <div class="sm:grid sm:grid-cols-10">
       
       <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
@@ -54,7 +53,7 @@
       <a href="/" class="z-50 ml-8 top-8 max-w-44 fixed cursor-pointer scale-y-0 peer-has-[:checked]:scale-y-100"><img draggable="false"  src="{{ '/assets/images/logosm.svg' | relative_url }}" alt="Mateusz Cabizza is Kernel panic studio"></a>
       {% endif %}
       <div class="transition-all fixed h-[40rem] w-full top-0 left-0 origin-top scale-y-0 peer-has-[:checked]:scale-y-100  bg-background dark:bg-background-dark [mask-image:_linear-gradient(to_bottom,_black_55%,_transparent_100%)]">
-        <div class="h-full bg-[url('{{ '/assets/images/noise.png' | relative_url }}')] dark:bg-[url('{{ '/assets/images/noisedark.png' | relative_url }}')] animate-bggrain"></div>
+        <div class="h-full bgnoise animate-bggrain"></div>
         <!-- <div class="bg-gradient-to-b h-full dark:from-background-dark/90 from-background/90 to-transparent"></div> -->
       </div>
     </div>

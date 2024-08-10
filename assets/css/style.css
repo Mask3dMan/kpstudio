@@ -1,0 +1,12 @@
+---
+---
+
+.bgnoise {
+  background-image: url({{ '/assets/images/noise.png' | relative_url }}); 
+}
+
+@media (prefers-color-scheme: dark) {
+  .bgnoise {
+  background-image: url({{ '/assets/images/noisedark.png' | relative_url }});
+  }
+}
