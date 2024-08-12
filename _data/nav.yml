@@ -4,8 +4,8 @@
 - name: Works
   link: /gallery.html
 
-- name: Photos
-  link: /photos.html
+# - name: Photos
+#   link: /photos.html
 
 - name: About
   link: /about.html

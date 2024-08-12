@@ -17,7 +17,7 @@
     <script src="{{ '/assets/js/main.js' | relative_url }}">
     </script>
   </head>
-  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="document.getElementById('menu').checked = false">
+  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="if (!inscroll) document.getElementById('menu').checked = false">
     <div class="sm:grid sm:grid-cols-10">
       
       <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
