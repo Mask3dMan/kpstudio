@@ -31,7 +31,7 @@
     <script src="/assets/js/main.js">
     </script>
   </head>
-  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="document.getElementById('menu').checked = false">
+  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="if (!inscroll) document.getElementById('menu').checked = false">
     <div class="sm:grid sm:grid-cols-10">
       
       <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
@@ -49,17 +49,17 @@
       </div>
       <div class="transition-all sm:col-span-6 xl:col-span-5 mx-0 mt-[10vh] sm:mt-[20vh] peer-has-[:checked]:mt-[calc(10vh+14rem)]" >
         <div class="m-auto grid grid-cols-4 sm:grid-cols-5 grid-rows-4 sm:grid-rows-5 gap-6 sm:gap-3 md:gap-4 mb-6 mx-8 sm:mx-0">
-  <div class="col-span-3 sm:col-span-2 bg-primary sm:max-w-64 rounded-3xl row-span-4 sm:row-span-5 shadow-lg shadow-primary/30"></div>
+  <img src="/assets/images/about/me.jpg" class="col-span-3 sm:col-span-2 bg-primary sm:max-w-64 rounded-3xl row-span-4 sm:row-span-5 shadow-lg shadow-primary/30">
   <a href="" class="aspect-square sm:max-w-28 bg-primary rounded-2xl lg:rounded-3xl sm:row-span-2 flex items-end shadow-lg shadow-primary/30 group">
     <p class="transition-all leading-5 sm:leading-6 group-hover:text-secondary font-serif text-background dark:text-background-dark text-xl lg:text-3xl mb-2 ml-3 lg:mb-4 lg:ml-4">lnk<br>dn</p>
   </a>
   <div class="hidden sm:block sm:col-span-1 sm:row-span-2"></div>
   <div class="hidden sm:block sm:col-span-1 sm:row-span-1"></div>
-  <a href="" class="aspect-square sm:max-w-28 bg-primary rounded-2xl lg:rounded-3xl sm:row-span-2 flex items-end shadow-lg shadow-primary/30 group">
+  <a href="https://dribbble.com/kernelpanicstudio" class="aspect-square sm:max-w-28 bg-primary rounded-2xl lg:rounded-3xl sm:row-span-2 flex items-end shadow-lg shadow-primary/30 group">
     <p class="transition-all leading-5 sm:leading-6 group-hover:text-secondary font-serif text-background dark:text-background-dark text-xl lg:text-3xl mb-2 ml-3 lg:mb-4 lg:ml-4">drb<br>bbl</p>
   </a>
   <div class="hidden sm:block sm:col-span-1 sm:row-span-2"></div>
-  <a href="" class="aspect-square sm:max-w-28 bg-primary rounded-2xl lg:rounded-3xl sm:row-span-2 flex items-end shadow-lg shadow-primary/30 group">
+  <a href="https://www.instagram.com/kernelpanic_studio/" class="aspect-square sm:max-w-28 bg-primary rounded-2xl lg:rounded-3xl sm:row-span-2 flex items-end shadow-lg shadow-primary/30 group">
     <p class="transition-all leading-5 sm:leading-6 group-hover:text-secondary font-serif text-background dark:text-background-dark text-xl lg:text-3xl mb-2 ml-3 lg:mb-4 lg:ml-4">ig</p>
   </a>
 </div>
@@ -86,15 +86,6 @@
   <div id="neg-Works"" class=""> 
     <a href="/gallery.html" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
       Works
-    </a>
-  </div>
-</div>
-<div class="h-6 sm:h-3"></div>
-
-<div id="Photos"  class="flex items-center w-fit h-7 hover:bg-secondary hover:shadow-md hover:shadow-primary/20 rounded" >
-  <div id="neg-Photos"" class=""> 
-    <a href="/photos.html" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
-      Photos
     </a>
   </div>
 </div>

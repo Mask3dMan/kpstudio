@@ -31,7 +31,7 @@
     <script src="/assets/js/main.js">
     </script>
   </head>
-  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="document.getElementById('menu').checked = false">
+  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="if (!inscroll) document.getElementById('menu').checked = false">
     <div class="sm:grid sm:grid-cols-10">
       
       <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
@@ -105,15 +105,6 @@
   <div id="neg-Works"" class=""> 
     <a href="/gallery.html" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
       Works
-    </a>
-  </div>
-</div>
-<div class="h-6 sm:h-3"></div>
-
-<div id="Photos"  class="flex items-center w-fit h-7 hover:bg-secondary hover:shadow-md hover:shadow-primary/20 rounded" >
-  <div id="neg-Photos"" class=""> 
-    <a href="/photos.html" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
-      Photos
     </a>
   </div>
 </div>

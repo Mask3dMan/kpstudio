@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('neg-Works').style.transform = `rotate(${inv*(random)}deg)`
 
   random = a/2 - Math.floor(Math.random()*a)
-  document.getElementById('Photos').style.transform = `rotate(${random}deg)`
-  document.getElementById('neg-Photos').style.transform = `rotate(${inv*(random)}deg)`
-
-  random = a/2 - Math.floor(Math.random()*a)
   document.getElementById('About').style.transform = `rotate(${random}deg)`
   document.getElementById('neg-About').style.transform = `rotate(${inv*(random)}deg)`
 
