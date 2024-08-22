@@ -1,0 +1,28 @@
+url: icons
+title: Icon designs
+description: Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism. 
+imgs:
+- url: 0
+  alt:
+- url: 1
+  alt:
+  aspect: square
+- url: 2
+  alt:
+- url: 3
+  alt:
+- url: 4
+  alt:
+- url: 5
+  alt:
+- url: 6
+  alt:
+
+
+tecnologies: 
+- sketch.app
+- figma
+- illustrator
+
+category:
+- icon
