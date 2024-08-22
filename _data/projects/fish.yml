@@ -1,15 +1,17 @@
 url: fish
 title: Rustling pages brand identity
-description: 
+description: Logo, brand identity and social templates for an educational Instagram creator catering new music producers and audio enthusiasts. It is a fresh take on 70s music poster and magazines aestetic, keeping a paper like texture and feel, while incorporating fresh and modern elements.
 imgs:
 - url: 0
-  alt:
+  alt: logo and palette
 - url: 1
-  alt:
+  aspect: wide
+  alt: design showcase
 
 tecnologies: 
 - indesign
 - illustrator
+- figma
 
 category:
 - brand identity

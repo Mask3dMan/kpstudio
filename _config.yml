@@ -1,6 +1,13 @@
 url: 'https://kernelpanic.studio/'
 baseurl: ''
 title: 'Mateusz Cabizza is Kernel Panic Studio'
+description: 'Personal portfolio of a designer, webdev and 3D artist.'
+
+seo:
+  name: 'Mateusz Cabizza is Kernel Panic Studio'
+  description: 'Personal portfolio of a designer, webdev and 3D artist. Available for hire!'
+  author: 'Mateusz Cabizza'
+  image: '/assets/default.webp'
 
 
 plugins:
@@ -17,6 +24,8 @@ exclude:
   - tailwind.config.js
   - node_modules
   - Gemfile
+
+
 
 portfolio_dir: "projects"
 skip_related_projects: true

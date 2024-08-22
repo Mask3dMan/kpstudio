@@ -1,6 +1,6 @@
 url: neodentist
 title: Neon dentist brand identity and logo
-description: 
+description: Made for a local dentist with a passion for the cyberpunk aestetic, and a strong will to differentiate themselves. Since they specialize in braces, the logo is meant to convey that. The single "tooth" element is decoupled from the logo and used for various graphics and icons throughout templates.
 imgs:
 - url: 0
   alt: showcase
@@ -11,12 +11,14 @@ imgs:
 - url: 3
   alt:
 - url: 4
+  aspect: square
   alt:
 
 tecnologies: 
 - sketch.app
 - illustrator
 - indesign
+- photography
 
 category:
 - brand identity

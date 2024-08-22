@@ -2,12 +2,12 @@
 layout: default
 ---
 <div class="grid grid-cols-5">
-  <div class="mb-8 flex gap-4 col-span-full overflow-x-scroll snap-x snap-mandatory h-[30rem] sm:[mask-image:_linear-gradient(to_right,_transparent_0%,_black_1%,_black_99%,_transparent_100%)] scroll-ps-8 scroll-pe-8">
+  <div class="mb-8 flex gap-4 col-span-full overflow-x-scroll snap-x snap-mandatory h-[30rem] landscapes:h-80 sm:[mask-image:_linear-gradient(to_right,_transparent_0%,_black_1%,_black_99%,_transparent_100%)] scroll-ps-8 scroll-pe-8">
 
     <div class="flex-shrink-0 w-4"></div>
  
     {% for img in page.imgs%}
-    <div class="flex-shrink-0 rounded-3xl shadow-md shadow-primary/20 {% if img.aspect == 'wide' %} aspect-[4/3] snap-end {% elsif img.aspect == 'square' %} aspect-square snap-end {% else %} aspect-[3/4] snap-start {%endif%} landscapes:w-1/2 snap-always mb-4"><img class="object-cover size-full rounded-3xl" src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}" alt="{{img.alt}}">
+    <div class="flex-shrink-0 rounded-3xl shadow-md shadow-primary/20 {% if img.aspect == 'wide' %} aspect-[4/3] snap-end {% elsif img.aspect == 'square' %} aspect-square snap-end {% else %} aspect-[3/4] snap-start {%endif%} snap-always mb-4"><img class="object-cover size-full rounded-3xl" src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.webp' }}" alt="{{img.alt}}">
     <!-- <div class="flex-shrink-0 rounded-3xl shadow-md shadow-primary/20 {% if img.aspect == 'wide' %} aspect-[4/3] {% elsif img.aspect == 'square' %} aspect-square {% else %} aspect-[3/4] {%endif%} lg:aspect-square landscapes:w-1/2 snap-always snap-start w-[calc(100%-4rem)] max-w-lg mb-4"><img class="object-cover size-full rounded-3xl" src="/assets/images/{{page.url}}{{img.url}}.jpg" alt="{{img.alt}}"> -->
     </div>
     {% endfor %}
@@ -32,4 +32,4 @@ layout: default
     {% endfor %}
   </ul>
 </div>
-<div class="hidden sm:block fixed bottom-96 landscapes:bottom-0 -translate-x-44"><a href="{{ '/gallery.html' | relative_url }}"><img class="size-44 scale-50" src="{{ '/assets/images/back.svg' | relative_url }}" alt="go back to gallery"></a></div>
+<div class="hidden sm:block fixed bottom-[10%] landscapes:bottom-0 -translate-x-44"><a href="{{ '/gallery.html' | relative_url }}"><img class="size-44 scale-50" src="{{ '/assets/images/back.svg' | relative_url }}" alt="go back to gallery"></a></div>

@@ -1,5 +1,6 @@
 {% for item in site.data.nav %}
-<div id="{{item.name}}" {% if page.url == item.link %} class="flex items-center w-fit h-7 bg-secondary shadow-md shadow-primary/20 rounded" {% else %} class="flex items-center w-fit h-7 hover:bg-secondary hover:shadow-md hover:shadow-primary/20 rounded" {% endif %}>
+<div id="{{item.name}}"  
+class="transition-all flex items-center w-fit h-7 rounded {% if page.url == item.link %} bg-secondary shadow-md shadow-primary/20 {% else %} hover:bg-secondary hover:shadow-md hover:shadow-primary/20 {% endif %}">
   <div id="neg-{{item.name}}"" class=""> 
     <a href="{{ item.link | relative_url }}" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
       {{ item.name }}

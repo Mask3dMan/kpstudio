@@ -19,7 +19,8 @@ title: Works
     {% else %}
     <div id='a{{item.cat}}' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group {% if item.inv %}bg-primary{%else%}bg-secondary{%endif%}" {% comment %} {% if category.name == 'All' or item.cat == category.name %}  style="display: block;" {% else %}style="display: none;"{% endif %} {% endcomment %}>
       <a href="{{ '/projects/' | relative_url | append: item.link }}">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.jpg' }});">
+        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.webp' }});">
+
           <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
             <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
               {{ item.name }}

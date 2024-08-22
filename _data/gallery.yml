@@ -11,7 +11,7 @@
 - name: iMac to go
   link: macbook
   inv : true
-  cat : All
+  cat : 3D
 
 - name: Mean cuppa
   link: coffee
@@ -52,13 +52,9 @@
 - name: spacer
   link: 
 
-- name: iBooks icon set
-  link: ibook
+- name: icons
+  link: icons
   inv : true
-  cat : icons
-
-- name: Glowy terminal
-  link: terminal
   cat : icons
 
 - name: Command Z
@@ -69,30 +65,3 @@
 - name: Casio
   link: casio
   cat : illustrations
-
-- name: Baloons.app
-  link: baloons
-  cat : icons
-
-- name: Pizzabox
-  link: pizza
-  inv : true
-  cat : icons
-
-- name: spacer
-  link:
-
-
-- name: Look Ma! I'm on the Mac
-  link: bluey
-  cat : icons
-
-
-- name: CubeConsole
-  link: gamecube
-  cat : icons
-  
-- name: SummerWave
-  link: summer
-  inv : true
-  cat : icons
