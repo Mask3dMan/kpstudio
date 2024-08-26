@@ -1,10 +1,16 @@
 url: casio
 title: 
+  en: Minimal Casio Watches
+  it: Orologi Casio Minimali
 description: 
+  en: 'A minimalist graphical composition for what is a maximallist watch: the G-Shock.'
+  it: 'Una composiozione grafica minimalista, per ciò che può essere considerato un orologio massimalista: il G-Shock'
 imgs:
 - url: 0
+  size: hero
   alt: A minimal illustration of the G-Shock GA2100
 - url: 1
+  size: full
   alt: A minimal illustration of the Casio 
 
 tecnologies: 

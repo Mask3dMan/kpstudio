@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/
+
+User-agent: *
+Disallow: /thanks.html
+Disallow: /it/thanks.html
+Disallow: /404.html
+Disallow: /it/404.html

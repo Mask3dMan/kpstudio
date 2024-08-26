@@ -1,18 +1,28 @@
 url: mmachine
-title: The Memory Machine
-description: A modern instant camera project, modelled in blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos.
+title: 
+  en: The Memory Machine
+  it: Memory Machine
+description: 
+  en: A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos.
+  it: Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender.
 imgs:
 - url: 0
+  size: hero
   alt:
 - url: 1
-  alt:
-- url: 2
+  size:
   alt:
 - url: 4
+  size:
+  alt:
+- url: 2
+  size: full
   alt:
 - url: 3
+  size:
   alt:
 - url: 5
+  size:
   alt:
 
 tecnologies: 

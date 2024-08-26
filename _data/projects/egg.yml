@@ -1,8 +1,13 @@
 url: egg
-title: Eggplant
-description: Eggplant
+title: 
+  en: Eggplant
+  it:
+description: 
+  en: Eggplant
+  it:
 imgs:
 - url: 0
+  size: hero
   alt: A plant with a fried egg instead of the flower
 
 tecnologies: 

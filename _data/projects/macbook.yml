@@ -1,21 +1,31 @@
 url: macbook
-title: iMac to go
-description: I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup.
+title: 
+  en: iMac to go
+  it:
+description: 
+  en: I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup.
+  it:
 imgs:
 - url: 0
+  size: hero
   alt: A showcase of all the colors of this imaginary Apple laptop
-  aspect: wide
 - url: 1
-  alt: 
+  size: full
+  alt: red Apple laptop seen from the front
 - url: 2
+  size: 
   alt:
 - url: 3
-  alt:
-- url: 4
+  size: 
   alt:
 - url: 5
+  size: full
+  alt:
+- url: 4
+  size: 
   alt:
 - url: 6
+  size: 
   alt:
   aspect: square
 

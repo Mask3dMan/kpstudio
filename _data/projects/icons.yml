@@ -1,21 +1,31 @@
 url: icons
-title: Icon designs
-description: Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism. 
+title: 
+  en: Icon design
+  it: Icone
+description:  
+  en: Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism.
+  it: Diversi progetti di icone, per lo più basati sull'estetica di macOS, e sulla nuova ondata di scheumorfismo
 imgs:
-- url: 0
-  alt:
 - url: 1
+  size: full
   alt:
-  aspect: square
+- url: 0
+  size:
+  alt:
 - url: 2
+  size:
   alt:
 - url: 3
+  size:
   alt:
 - url: 4
+  size: 
   alt:
 - url: 5
+  size: 
   alt:
 - url: 6
+  size: 
   alt:
 
 

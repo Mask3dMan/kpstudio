@@ -1,0 +1,34 @@
+<title>
+  {% if page.url != '/'%} {{ page.title[site.active_lang] | default: page.title.en }} - {{ site.title }} {% else %} {{
+  site.title}} {% endif %}
+</title>
+<meta
+  name="description"
+  content="{{ page.description[site.active_lang] | default: site.description[site.active_lang] }}"
+/>
+<meta
+  property="og:locale"
+  content="{% if site.active_lang == 'en' %}en_US{% elsif site.active_lang == 'it' %}it_IT{% endif %}"
+/>
+
+{% for lang in site.languages %} {% unless lang == site.active_lang %}
+<meta
+  property="og:locale:alternate"
+  content="{% if lang == 'en' %}en_US{% elsif lang == 'it' %}it_IT{% endif %}"
+/>
+{% endunless %} {% endfor %}
+<meta
+  property="og:title"
+  content='{% if page.url != '/'%} {{ page.title[site.active_lang] | default: page.title.en }} - {{ site.title }} {% else %}{{ site.title }}{% endif %}'
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta
+  property="og:image"
+  content="{{ page.image.url | default: site.image.url }}"
+/>
+<meta
+  property="og:image:alt"
+  content="{{ page.image.alt[site.active_lang] | default: site.image.alt[site.active_lang] }}"
+/>
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />

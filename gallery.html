@@ -1,83 +1,60 @@
 ---
 layout: default
-title: Works
+title: 
+ en: Works
+ it: Lavori
+permalink: /gallery
 ---
 
-{% comment %}
-{% for category in site.data.categories %}
-<!-- <div id="group{{category.name}}" class="m-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-8 sm:mx-0 sm:-mt-5 mb-10">  -->
-{% endfor %}{% endcomment %}
-
-<div class="m-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-8 sm:mx-0 sm:-mt-5 mb-10">
-  {% for item in site.data.gallery %}
-    {% if item.name == 'spacermd' %}
-    <div class="invisible aspect-[3/2] row-span-2 hidden lg:block"></div>
-    {% elsif item.name == 'spacersm' %}
-    <div class="invisible aspect-[3/1] row-span-1 hidden sm:block"></div>
-    {% elsif item.name == 'spacer' %}
-    <div class="invisible aspect-square row-span-3 hidden lg:block"></div>
-    {% else %}
-    <div id='a{{item.cat}}' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group {% if item.inv %}bg-primary{%else%}bg-secondary{%endif%}" {% comment %} {% if category.name == 'All' or item.cat == category.name %}  style="display: block;" {% else %}style="display: none;"{% endif %} {% endcomment %}>
+{% assign i = 0 %}
+<div
+  class="m-auto mx-8 mb-10 grid grid-cols-1 sm:mx-0 sm:-mt-5 sm:grid-cols-2 lg:grid-cols-3"
+>
+  {% for item in site.data.gallery %} {% if item.name == 'spacermd' %}
+  <section class="invisible row-span-2 hidden aspect-[3/2] lg:block"></section>
+  {% elsif item.name == 'spacersm' %}
+  <section class="invisible row-span-1 hidden aspect-[3/1] sm:block"></section>
+  {% elsif item.name == 'spacer' %}
+  <section class="invisible row-span-3 hidden aspect-square lg:block"></section>
+  {% else %} {% assign i = i | plus:1 %}
+  <section
+    id="a{{item.cat}}"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*{{i}}); animation-fill-mode: forwards"
+  >
+    <div
+      class="{% if item.inv %}bg-primary{% else %}bg-secondary{% endif %} rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="{{ '/projects/' | relative_url | append: item.link }}">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.webp' }});">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.jpg' }})"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               {{ item.name }}
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style="{%if item.inv%} background-image: url({{ '/assets/images/wavephotoreapinv.png' | relative_url }}); {%else%} background-image: url({{ '/assets/images/wavephotoreap.png' | relative_url }}) {%endif%}">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style="{%if item.inv%} background-image: url({{ '/assets/images/wavephotoreapinv.png' | relative_url }}); {%else%} background-image: url({{ '/assets/images/wavephotoreap.png' | relative_url }}) {%endif%}"
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="{% if item.inv %}text-secondary{% else %}text-primary{% endif %} sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="{% if item.inv %}text-secondary{% else %}text-primary{% endif %} mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             {{ item.name }}
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    {% endif %}
-    {% endfor %}
-    {% comment %}
-    <!-- {% for category in site.data.categories %}
-      {% if item.cat == category.name %}
-      <div id="{{category.name}}" class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group {% if item.inv %}bg-primary{%else%}bg-secondary{%endif%}" style="display: block">
-        <a href="/projects/{{ item.link }}">
-          <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/{{item.link}}/thumb.jpg);">
-            <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-              <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
-                {{ item.name }}
-              </p>
-            </div>
-            <div class="flex sm:hidden items-end size-full">
-              <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1 {%if item.inv%}bg-[url('/assets/images/wavephotoreapinv.png')]{%else%}bg-[url('/assets/images/wavephotoreap.png')]{%endif%}">
-              </div>
-            </div>
-          </div>
-          <div class="flex items-end sm:hidden overflow-x-hidden">
-            <p class="{% if item.inv %}text-secondary{%else%}text-primary{%endif%} sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
-              {{ item.name }}
-            </p>
-          </div>
-        </a>
-      </div>
-      {% endif %}
-    {% endfor %} -->
-    {% endcomment %}
-    
+  </section>
+  {% endif %} {% endfor %}
 </div>
-
-
-{% comment %}
-<!-- menu categorie -->
-<!-- <div class="hidden sm:flex mx-8 sm:mx-0 sm:ml-8 my-10 flex-col items-end fixed left-[10%] top-72 peer">
-  {% for category in site.data.categories %}
-  <label for="{{category.name}}" class="text-background dark:text-background-dark mr-6 bg-primary shadow-md shadow-primary/20 py-2 px-3 rounded-xl text-xl mb-4 basis-0 w-fit has-[:checked]:bg-secondary has-[:checked]:text-primary group">
-    {{category.name}}
-    <input type="radio" name="radio" {% if category.name == site.data.categories.first.name %} checked {% endif %} id="{{category.name}}" class="hidden">
-  </label>
-  {% endfor %}
-</div> -->
-{% endcomment %}

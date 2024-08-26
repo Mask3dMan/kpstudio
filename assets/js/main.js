@@ -13,34 +13,5 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('{{item.name}}').style.transform = `rotate(${random}deg)`
   document.getElementById('neg-{{item.name}}').style.transform = `rotate(${inv*(random)}deg)`
 {% endfor %}
-{% comment %}
-
-// {% for category in site.data.categories %}
-// const {{category.name | split: " " | first | prepend: 'btn'}} = document.getElementById('{{category.name}}')
-// {% endfor %}
-
-// function handleRadioClick() {
-
-// {% for category in site.data.categories %}
-// if ({{category.name | split: " " | first | prepend: 'btn'}}.checked) {
-//   document.getElementById('group{{category.name}}').classList.remove('hidden');
-// }
-// else {
-//   document.getElementById('group{{category.name}}').classList.add('hidden');
-// }
-
-// {% endfor %}
-
-// }
-
-// const radioButtons = document.querySelectorAll(
-//   'input[name="radio"]',
-// );
-
-// radioButtons.forEach(radio => {
-//   radio.addEventListener('click', handleRadioClick);
-// });
-{% endcomment %}
-
 });
 

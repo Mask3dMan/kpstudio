@@ -1,11 +1,17 @@
 url: music
-title: Music production
-description: Simple and cute illustrations to showcase the gear I use for my music making hobby.
+title: 
+  en: Music production
+  it:
+description: 
+  en: Simple illustrations to showcase the gear I use for my music making hobby.
+  it: Semplici illustrazioni, create come showcase dell'atrezzatura che utilizzo nel mio hobby di fare musica.
 imgs:
 - url: 0
+  size: hero
   alt:
   aspect: square
 - url: 1
+  size: full
   alt:
   aspect: square
 tecnologies: 

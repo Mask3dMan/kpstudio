@@ -1,10 +1,15 @@
 ---
 layout: default
-title: page not found
+title: 
+ en: page not found
+ it: pagina non trovata
 permalink: /404.html
-
 ---
-<div class="mx-8 text-center mt-[30vh] sm:mt-[15vh]">
-  <div class="font-serif text-9xl sm:text-[16rem]">404</div>
-  <div class="text-xl sm:text-2xl">are you lost, or am I lost?</div>
-</div>
+
+<section class="mx-8 mt-[30vh] text-center sm:mt-[15vh]">
+  <h1 class="font-serif text-9xl sm:text-[16rem]">404</h1>
+  <h2 class="text-xl sm:text-2xl">{% if site.active_lang == 'it' %} ti sei perso, o mi sono perso io?
+	{% else %}
+	are you lost, or am I lost?
+	{% endif %}</h2>
+</section>

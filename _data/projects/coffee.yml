@@ -1,8 +1,13 @@
 url: coffee
-title: Mean coffee
+title: 
+  en: Mean coffee
+  it: Caffé nero 
 description: 
+  en: Mondays, amiright?
+  it: I lunedì, eh?
 imgs:
 - url: 0
+  size: hero
   alt: A grumpy cup of coffee
 
 tecnologies: 

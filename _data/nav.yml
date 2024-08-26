@@ -1,14 +1,11 @@
-- name: Home
+- name: home
   link: /
 
-- name: Works
-  link: /gallery.html
+- name: works
+  link: /gallery
 
-# - name: Photos
-#   link: /photos.html
-
-- name: About
-  link: /about.html
+- name: about
+  link: /about
   
-- name: Contact
-  link: /contacts.html
+- name: contact
+  link: /contacts

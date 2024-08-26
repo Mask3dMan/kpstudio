@@ -1,8 +1,13 @@
 url: lipstick
-title: Glitter pastel
+title: 
+  en: Glitter pastel
+  it:
 description: 
+  en:
+  it:
 imgs:
 - url: 0
+  size:
   alt:
 
 tecnologies: 

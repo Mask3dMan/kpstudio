@@ -1,0 +1,35 @@
+
+#thanks.html
+thanks: 
+ en: "Thanks!"
+ it: "Grazie!"
+subthanks: 
+ en: "I'll get back to you as soon as I can."
+ it: "Vi ricontatterò al più presto."
+# contacts.html
+name: 
+ en: "Name"
+ it: "Nome"
+message:
+ en: "Message"
+ it: "Messaggio"
+send:
+ en: "Send"
+ it: "Invia"
+# nav
+home:
+ en: "Home"
+ it: "Home"
+works:
+ en: "Works"
+ it: "Lavori"
+about:
+ en: "About"
+ it: "Chi sono"
+contact:
+ en: "Contact"
+ it: "Contatti"
+# about
+greetings:
+ en: "Hello! I'm Mateusz Cabizza"
+ it: "Ciao! Sono Mateusz Cabizza"

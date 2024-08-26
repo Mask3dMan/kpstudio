@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<div class="grid grid-cols-5">
+  <div
+    class="col-span-full mb-8 flex h-[30rem] snap-x snap-mandatory scroll-pe-8 scroll-ps-8 gap-4 overflow-x-scroll sm:[mask-image:_linear-gradient(to_right,_transparent_0%,_black_1%,_black_99%,_transparent_100%)] landscapes:h-80"
+  >
+    <div class="w-4 flex-shrink-0"></div>
+    {% for img in page.imgs%}
+    <div
+      class="{% if img.aspect == 'wide' %} {% elsif img.aspect == 'square' %} {% else %} {%endif%} mb-4 aspect-[3/4] aspect-[4/3] aspect-square flex-shrink-0 snap-start snap-end snap-always rounded-3xl shadow-md shadow-primary/20"
+    >
+      <img
+        class="size-full rounded-3xl object-cover"
+        src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
+        alt="{{img.alt}}"
+      />
+    </div>
+    {% endfor %}
+
+    <div class="w-4 flex-shrink-0"></div>
+  </div>
+  <!-- <div class=" mt-10 sm:mr-10 rounded-3xl col-span-1 bg-primary shadow-lg shadow-primary/20 aspect-square">
+
+  </div> -->
+  <div class="col-span-full mx-8 sm:col-span-4 sm:mx-0 sm:ml-8">
+    <div class="mb-3 font-serif text-3xl">{{page.title.en}}</div>
+    <div class="text-xl italic">
+      <p>{{page.description.en}}</p>
+    </div>
+  </div>
+
+  <ul class="col-span-full mx-8 my-10 flex flex-wrap sm:mx-0 sm:ml-8">
+    {% for technology in page.tecnologies %}
+    <li
+      class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
+    >
+      <a>{{technology}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<div
+  class="fixed bottom-[10%] hidden -translate-x-44 sm:block landscapes:bottom-0"
+>
+  <a href="{{ '/gallery.html' | relative_url }}"
+    ><img
+      class="size-44 scale-50"
+      src="{{ '/assets/images/back.svg' | relative_url }}"
+      alt="go back to gallery"
+  /></a>
+</div>

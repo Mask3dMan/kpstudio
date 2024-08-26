@@ -1,13 +1,17 @@
 url: cars
 title: 
+  en: Tiny cars
+  it: Tiny cars
 description: 
+  en: Illustration done in fully in Blender, without external resources or tools. An exploration of expressive lowpoly modeling and unconventional shaders.
+  it: Illustrazione fatte completamente in Blender, senza risorse esterne o tool aggiuntivi. Un'esplorazione di modellazione lowpoly, e utilizzo di shader non convenzionali.
 imgs:
 - url: 0
+  size: hero
   alt: A stylized and beaten up Fiat panda, lo poli and pixelated 3d graphics
-  aspect: square
 - url: 1
+  size: full
   alt: A city car encountering a glowing rock at night
-  aspect: square
 
 tecnologies: 
 - blender

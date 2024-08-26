@@ -1,8 +1,13 @@
 url: cmdz
-title: 
-description: 
+title:
+  en: CMD-Z
+  it: CMD-Z
+description:
+  en:
+  it: 
 imgs:
 - url: 0
+  size: hero
   alt: 
 
 tecnologies: 

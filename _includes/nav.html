@@ -1,20 +1,10 @@
 {% for item in site.data.nav %}
-<div id="{{item.name}}"  
-class="transition-all flex items-center w-fit h-7 rounded {% if page.url == item.link %} bg-secondary shadow-md shadow-primary/20 {% else %} hover:bg-secondary hover:shadow-md hover:shadow-primary/20 {% endif %}">
-  <div id="neg-{{item.name}}"" class=""> 
+<div id="{{item.name}}" class="transition-all flex items-center w-fit h-7 rounded {% if page.url == item.link %} bg-secondary shadow-md shadow-primary/20 {% else %} hover:bg-secondary hover:shadow-md hover:shadow-primary/20 {% endif %}">
+  <div id="neg-{{item.name}}"> 
     <a href="{{ item.link | relative_url }}" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
-      {{ item.name }}
+      {{site.data.translations[item.name][site.active_lang]}}
     </a>
   </div>
 </div>
 <div class="h-6 sm:h-3"></div>
 {% endfor %}
-
-  <!-- <a href="{{ item.link }}" 
-    {% if page.url == item.link %} 
-      class="bg-secondary rounded-xl sm:rounded-md px-3 sm:py-1 shadow-md shadow-primary/20" 
-    {% else %}
-      class="transition-all rounded-xl hover:bg-secondary hover:shadow-md hover:shadow-primary/20 sm:rounded-md px-3 sm:py-1"
-    {% endif %}>
-      {{ item.name }}
-    </a> -->

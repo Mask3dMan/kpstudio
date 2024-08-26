@@ -1,10 +1,16 @@
 ---
 layout: default
-title: Thank you!
-permaling: /thanks.html
-
+title: 
+ en: Thank you!
+ it: Grazie!
+permalink: /thanks.html
 ---
-<div class="mx-8 text-center mt-[30vh] sm:mt-[15vh]">
-  <div class="font-serif text-6xl sm:text-9xl">Thanks!</div>
-  <div class="text-xl sm:text-2xl">I'll get back to you as soon as I can.</div>
-</div>
+
+<section class="mx-8 mt-[30vh] text-center sm:mt-[15vh]">
+  <h1 class="font-serif text-6xl sm:text-9xl">
+    {{ site.data.translations[site.active_lang].thanks }}
+  </h1>
+  <h2 class="text-xl sm:text-2xl">
+    {{ site.data.translations[site.active_lang].subthanks }}
+  </h2>
+</section>

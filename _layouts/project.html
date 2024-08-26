@@ -1,35 +1,49 @@
 ---
 layout: default
 ---
-<div class="grid grid-cols-5">
-  <div class="mb-8 flex gap-4 col-span-full overflow-x-scroll snap-x snap-mandatory h-[30rem] landscapes:h-80 sm:[mask-image:_linear-gradient(to_right,_transparent_0%,_black_1%,_black_99%,_transparent_100%)] scroll-ps-8 scroll-pe-8">
+{% for img in page.imgs%}
+{% if img.size == 'hero' %}
+    
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+        <img
+        class="size-full sm:rounded-3xl object-cover"
+        src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
+        alt="{{ img.alt }}"
+        />
+</div>
+{% endif %}
+{% endfor %}
+<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+    
+    <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-    <div class="flex-shrink-0 w-4"></div>
- 
+        <h1 class="mb-3 font-serif text-3xl">
+            {{page.title[site.active_lang]}}
+        </h1>
+        <div class="text-xl italic">
+            {{page.description[site.active_lang]}}
+        </div>
+    </div>
     {% for img in page.imgs%}
-    <div class="flex-shrink-0 rounded-3xl shadow-md shadow-primary/20 {% if img.aspect == 'wide' %} aspect-[4/3] snap-end {% elsif img.aspect == 'square' %} aspect-square snap-end {% else %} aspect-[3/4] snap-start {%endif%} snap-always mb-4"><img class="object-cover size-full rounded-3xl" src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.webp' }}" alt="{{img.alt}}">
-    <!-- <div class="flex-shrink-0 rounded-3xl shadow-md shadow-primary/20 {% if img.aspect == 'wide' %} aspect-[4/3] {% elsif img.aspect == 'square' %} aspect-square {% else %} aspect-[3/4] {%endif%} lg:aspect-square landscapes:w-1/2 snap-always snap-start w-[calc(100%-4rem)] max-w-lg mb-4"><img class="object-cover size-full rounded-3xl" src="/assets/images/{{page.url}}{{img.url}}.jpg" alt="{{img.alt}}"> -->
+    {% unless img.size == 'hero' %}
+        
+    <div class="{% if img.size == 'full' %} col-span-full {% elsif img.size == 'third' %} col-span-2 {% else %} col-span-3 {% endif %} shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
+        alt="{{img.alt}}"
+        />
     </div>
+    {% endunless %}
+        
     {% endfor %}
-
-    <div class="flex-shrink-0 w-4"></div>    
-  </div>
-  <!-- <div class=" mt-10 sm:mr-10 rounded-3xl col-span-1 bg-primary shadow-lg shadow-primary/20 aspect-square">
-
-  </div> -->
-  <div class="col-span-full sm:col-span-4 mx-8 sm:mx-0 sm:ml-8">
-    <div class="font-serif text-3xl mb-3">
-      {{page.title}}
-    </div>
-    <div class="italic text-xl">
-      <p>{{page.description}}</p>
-    </div>
-  </div>
-
-  <ul class="mx-8 sm:mx-0 sm:ml-8 col-span-full flex flex-wrap my-10">
+    <ul class="col-span-full my-10 flex flex-wrap sm:mx-0">
     {% for technology in page.tecnologies %}
-    <li class="text-background dark:text-background-dark inline mr-6 bg-primary shadow-md shadow-primary/20 py-2 px-3 rounded-xl text-xl mb-4"><a>{{technology}}</a></li>
+    <li
+      class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
+    >
+      <a>{{technology}}</a>
+    </li>
     {% endfor %}
   </ul>
 </div>
-<div class="hidden sm:block fixed bottom-[10%] landscapes:bottom-0 -translate-x-44"><a href="{{ '/gallery.html' | relative_url }}"><img class="size-44 scale-50" src="{{ '/assets/images/back.svg' | relative_url }}" alt="go back to gallery"></a></div>

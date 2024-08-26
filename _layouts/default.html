@@ -1,61 +1,167 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<!doctype html>
+<html lang="{{ site.active_lang | default: 'en' }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{% if page.url != '/'%} {{ page.title }} - {{ site.title }} {% else %} {{ site.title}} {% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
-    <link rel="icon" href="{{ '/assets/images/favicon/favicon32.png' | relative_url }}" sizes="32x32">
-    <link rel="icon" href="{{ '/assets/images/favicon/favicon64.png' | relative_url }}" sizes="64x64">
-    <link rel="icon" href="{{ '/assets/images/favicon/mobileicon2x.png' | relative_url }}" type="image/png">
-    <link rel="apple-touch-icon" href="{{ '/assets/images/favicon/mobileicon2x.png' | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    {% include seo.html %}
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css' | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/fonts.css' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      href="{{ '/assets/images/favicon/favicon32.png' | relative_url }}"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="{{ '/assets/images/favicon/favicon64.png' | relative_url }}"
+      sizes="64x64"
+    />
+    <link
+      rel="icon"
+      href="{{ '/assets/images/favicon/mobileicon2x.png' | relative_url }}"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="{{ '/assets/images/favicon/mobileicon2x.png' | relative_url }}"
+    />
+    <meta name="theme-color" content="#DF8197" />
+    {% include seo.html %}
+    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if a language preference is already stored
+        if (!localStorage.getItem('preferredLang')) {
+          var userLang = navigator.language || navigator.userLanguage; // Detect browser language
 
-    <meta name="theme-color" content="#DF8197">
-    {% seo %}
-    <script src="{{ '/assets/js/main.js' | relative_url }}">
+          // Default to the English version (assuming English is the default language)
+          var defaultLang = "{{ site.default_lang }}";
+          var supportedLanguages = {{ site.languages | jsonify }}; // List of supported languages
+
+          // Check if the detected language is supported
+          var langPrefix = userLang.split('-')[0]; // Extract primary language code (e.g., 'en' from 'en-US')
+          if (supportedLanguages.includes(langPrefix)) {
+            // Redirect to the corresponding language version if it's not the default
+            if (langPrefix !== defaultLang) {
+              window.location.href = "{{ site.baseurl }}/" + langPrefix + "{{ page.url }}";
+            }
+          }
+        } else {
+          // If language preference is stored, no redirection occurs
+          var preferredLang = localStorage.getItem('preferredLang');
+          if (preferredLang !== "{{ site.active_lang }}") {
+            if (preferredLang === defaultLang) {
+              window.location.href = "{{ site.baseurl }}{{ page.url }}";
+            } else {
+              window.location.href = "{{ site.baseurl }}/" + preferredLang + "{{ page.url }}";
+            }
+          }
+        }
+      });
     </script>
   </head>
-  <body class="scroll-smooth bg-background dark:bg-background-dark text-primary font-sans animate-bggrain bgnoise" onscroll="if (!inscroll) document.getElementById('menu').checked = false">
+  <body
+    class="bgnoise animate-bggrain scroll-smooth bg-background font-sans text-primary dark:bg-background-dark"
+    onscroll="if (!inscroll) document.getElementById('menu').checked = false"
+  >
     <div class="sm:grid sm:grid-cols-10">
-      
-      <label for="menu" class="sm:hidden fixed z-30 top-20 right-8 space-y-2 flex flex-col items-end peer">
-        <input type="checkbox" name="menu" id="menu"{% if page.url != '/gallery.html' %} onchange="window.scrollTo({top: 0, behavior: 'smooth'}); inscroll=true; setTimeout(function(){inscroll=false}, 800);" {% endif %} class=" top-16 right-8 w-8 h-8 peer group hidden z-10 ">
-        <div class="transition-all origin-top-right  peer-checked:w-9 shadow-sm rounded-sm h-1 w-10 bg-primary peer-checked:-rotate-45"></div>
-        <div class="transition-all rounded-sm h-1 w-8 bg-primary peer-checked:scale-0"></div>
-        <div class="transition-all origin-bottom-right rounded-sm h-1 w-9 bg-primary peer-checked:rotate-45"></div>
-        <div class="transition-all absolute w-7 h-7 bg-secondary rounded-md -rotate-6 -z-10 translate-x-1 -translate-y-2 peer-checked:rotate-[84deg] center peer-checked:scale-110 shadow-md shadow-primary/20"></div>
-        
+      <!-- hamburger button -->
+      <label
+        for="menu"
+        class="peer fixed right-8 top-20 z-30 flex flex-col items-end space-y-2 sm:hidden"
+      >
+        <input
+          type="checkbox"
+          name="menu"
+          id="menu"
+          class="peer right-8 top-16 z-10 hidden h-8 w-8"
+        />
+        <!-- animated divs as hamburger icon -->
+        <div
+          class="h-1 w-10 origin-top-right rounded-sm bg-primary shadow-sm transition-all peer-checked:w-9 peer-checked:-rotate-45"
+        ></div>
+        <div
+          class="h-1 w-8 rounded-sm bg-primary transition-all peer-checked:scale-0"
+        ></div>
+        <div
+          class="h-1 w-9 origin-bottom-right rounded-sm bg-primary transition-all peer-checked:rotate-45"
+        ></div>
+        <div
+          class="center absolute -z-10 h-7 w-7 -translate-y-2 translate-x-1 -rotate-6 rounded-md bg-secondary shadow-md shadow-primary/20 transition-all peer-checked:rotate-[84deg] peer-checked:scale-110"
+        ></div>
       </label>
+      <!-- logo column -->
       {% if page.url != '/' %}
-      <div class="sm:col-span-2 xl:col-span-3 sm:ml-10 ml-8 sm:mr-2 mt-8 sm:mt-16 max-w-44 sm:max-w-48 lg:mr-10">
-          <a href="{{'/' | relative_url}}"><img draggable="false" class="z-10 top-16 sticky cursor-pointe" src="{{ '/assets/images/logosm.svg' | relative_url }}
-            " alt="Mateusz Cabizza is Kernel panic studio"></a>
-      </div>
-      <div class="transition-all sm:col-span-6 xl:col-span-5 mx-0 mt-[10vh] sm:mt-[20vh] peer-has-[:checked]:mt-[calc(10vh+14rem)]" >
+      <aside
+        class="ml-8 mt-8 max-w-44 sm:col-span-2 sm:ml-10 sm:mr-2 sm:mt-16 sm:max-w-48 lg:mr-10 xl:col-span-3"
+      >
+        <a href="{{'/' | relative_url}}"
+          ><img
+            draggable="false"
+            class="cursor-pointe sticky top-16 z-10"
+            src="{{ '/assets/images/logosm.svg' | relative_url }}"
+            alt="Mateusz Cabizza is Kernel panic studio"
+        /></a>
+      </aside>
+      <main
+        class="mx-0 mt-[10vh] transition-all peer-has-[:checked]:mt-[calc(10vh+14rem)] sm:col-span-6 sm:mt-[20vh] xl:col-span-5"
+      >
         {{ content }}
-      </div>
+      </main>
       {% else %}
-      <div class="hidden sm:block col-span-2 mt-16 max-w-48 my-10">
-      </div>
-      <div class="transition-all sm:col-span-6 mt-[35vh] sm:mt-[25vh] peer-has-[:checked]:mt-[26rem]">
+      <!-- empty column -->
+      <aside class="col-span-2 my-10 mt-16 hidden max-w-48 sm:block"></aside>
+      <main
+        class="mt-[35vh] transition-all peer-has-[:checked]:mt-[26rem] sm:col-span-6 sm:mt-[25vh]"
+      >
         {{ content }}
-      </div>
+      </main>
       {% endif %}
       <!-- <div id="nav" class="transition-all fixed sm:h-screen top-32 sm:top-0 translate-x-48 col-span-2 sm:mt-16 right-6 md:right-10 xl:right-32 sm:translate-x-0 origin-right"> -->
-      <div id="nav" class="z-20 transition-all fixed sm:h-screen top-36 sm:top-0 translate-x-48 col-span-2 sm:mt-16 right-6 md:right-10 xl:right-32 sm:transform-none peer-has-[:checked]:translate-x-0 sm:translate-x-0 origin-right">
-        <nav class="flex items-end sm:items-start flex-col transition-all text-4xl font-bold sm:font-normal lowercase sm:text-2xl">
-              {% include nav.html %}
-        </nav>
-      </div>
-      {% if page.url == '/gallery.html' %}
-      <a href="/" class="z-50 ml-8 top-8 max-w-44 fixed cursor-pointer scale-y-0 peer-has-[:checked]:scale-y-100"><img draggable="false"  src="{{ '/assets/images/logosm.svg' | relative_url }}" alt="Mateusz Cabizza is Kernel panic studio"></a>
+      <nav
+        id="nav"
+        class="fixed right-6 top-36 z-20 col-span-2 origin-right translate-x-56 transition-all peer-has-[:checked]:translate-x-0 sm:right-0 sm:top-0 sm:mt-16 sm:h-screen sm:w-32 sm:translate-x-0 sm:transform-none md:right-5 xl:right-20"
+      >
+        <div
+          class="flex flex-col items-end text-4xl font-bold lowercase transition-all sm:items-start sm:text-2xl sm:font-normal"
+        >
+          {% include nav.html %}
+        </div>
+        <!-- desktop language switcher -->
+        <div class="fixed bottom-4 right-4 hidden sm:flex">
+          {% include langswitcher.html %}
+        </div>
+      </nav>
+      <!-- mobile language switcher -->
+      <section
+        class="fixed bottom-8 left-[50%] z-20 flex translate-x-[-50%] translate-y-20 text-2xl transition-all peer-has-[:checked]:translate-y-0 sm:hidden"
+      >
+        {% include langswitcher.html %}
+      </section>
+      <!-- logo in hamburger menu -->
+      {% if page.url != "/" %}
+      <a
+        href="/"
+        class="fixed top-8 z-50 ml-8 max-w-44 cursor-pointer opacity-0 transition-all peer-has-[:checked]:opacity-100"
+        ><img
+          draggable="false"
+          src="{{ '/assets/images/logosm.svg' | relative_url }}"
+          alt="Mateusz Cabizza is Kernel panic studio"
+      /></a>
       {% endif %}
-      <div class="transition-all fixed h-[40rem] w-full top-0 left-0 origin-top scale-y-0 peer-has-[:checked]:scale-y-100  bg-background dark:bg-background-dark [mask-image:_linear-gradient(to_bottom,_black_55%,_transparent_100%)]">
+      <!-- semi transparent gradient in menu -->
+      <section
+        class="fixed left-0 top-0 h-full w-full origin-top scale-0 bg-background opacity-0 transition-opacity [mask-image:_linear-gradient(to_bottom,_black_35%,_transparent_60%,_transparent_80%,_black_95%)] peer-has-[:checked]:scale-100 peer-has-[:checked]:opacity-100 dark:bg-background-dark"
+      >
         <div class="h-full bgnoise animate-bggrain"></div>
-        <!-- <div class="bg-gradient-to-b h-full dark:from-background-dark/90 from-background/90 to-transparent"></div> -->
-      </div>
+      </section>
     </div>
   </body>
 </html>
