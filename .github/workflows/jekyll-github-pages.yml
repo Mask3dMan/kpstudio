@@ -31,7 +31,9 @@ jobs:
           bundle install
 
       - name: 🔨 install dependencies & build site
-        run: bundle exec jekyll build
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: false
 
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
