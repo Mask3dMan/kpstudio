@@ -20,7 +20,6 @@ languages: ["en", "it"]
 default_lang: "en"
 exclude_from_localization: ["assets", "css", "js", "CNAME", "README.md", "package-lock.json"]
 path: ":lang/:url"
-parallel_localization: false
 
 postcss:
   cache: false
