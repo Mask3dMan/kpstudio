@@ -28,11 +28,11 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
-          gem install
+          bundle install
 
       - name: 🔨 install dependencies & build site
         run: bundle exec jekyll build
-        
+
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
