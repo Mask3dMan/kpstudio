@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>
+   Memory Machine - Mateusz Cabizza is Kernel Panic Studio 
+</title>
+<meta
+  name="description"
+  content="Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender."
+/>
+<meta
+  property="og:locale"
+  content="it_IT"
+/>
+
+ 
+<meta
+  property="og:locale:alternate"
+  content="en_US"
+/>
+   
+<meta
+  property="og:title"
+  content=' Memory Machine - Mateusz Cabizza is Kernel Panic Studio '
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kernelpanic.studio//projects/mmachine/" />
+<meta
+  property="og:image"
+  content="/assets/images/default.webp"
+/>
+<meta
+  property="og:image:alt"
+  content="Il logo di Kernel Panic Studio"
+/>
+<link rel="canonical" href="https://kernelpanic.studio//it/projects/mmachine/" />
+
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/assets/css/fonts.css"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/favicon64.png"
+      sizes="64x64"
+    />
+    <link
+      rel="icon"
+      href="/assets/images/favicon/mobileicon2x.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="/assets/images/favicon/mobileicon2x.png"
+    />
+    <meta name="theme-color" content="#DF8197" />
+    <title>
+   Memory Machine - Mateusz Cabizza is Kernel Panic Studio 
+</title>
+<meta
+  name="description"
+  content="Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender."
+/>
+<meta
+  property="og:locale"
+  content="it_IT"
+/>
+
+ 
+<meta
+  property="og:locale:alternate"
+  content="en_US"
+/>
+   
+<meta
+  property="og:title"
+  content=' Memory Machine - Mateusz Cabizza is Kernel Panic Studio '
+/>
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://kernelpanic.studio//projects/mmachine/" />
+<meta
+  property="og:image"
+  content="/assets/images/default.webp"
+/>
+<meta
+  property="og:image:alt"
+  content="Il logo di Kernel Panic Studio"
+/>
+<link rel="canonical" href="https://kernelpanic.studio//it/projects/mmachine/" />
+
+    <script src="/assets/js/main.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", function() {
+        // Check if a language preference is already stored
+        if (!localStorage.getItem('preferredLang')) {
+          var userLang = navigator.language || navigator.userLanguage; // Detect browser language
+
+          // Default to the English version (assuming English is the default language)
+          var defaultLang = "en";
+          var supportedLanguages = ["en","it"]; // List of supported languages
+
+          // Check if the detected language is supported
+          var langPrefix = userLang.split('-')[0]; // Extract primary language code (e.g., 'en' from 'en-US')
+          if (supportedLanguages.includes(langPrefix)) {
+            // Redirect to the corresponding language version if it's not the default
+            if (langPrefix !== defaultLang) {
+              window.location.href = "/" + langPrefix + "/projects/mmachine/";
+            }
+          }
+        } else {
+          // If language preference is stored, no redirection occurs
+          var preferredLang = localStorage.getItem('preferredLang');
+          if (preferredLang !== "it") {
+            if (preferredLang === defaultLang) {
+              window.location.href = "/projects/mmachine/";
+            } else {
+              window.location.href = "/" + preferredLang + "/projects/mmachine/";
+            }
+          }
+        }
+      });
+    </script>
+  </head>
+  <body
+    class="bgnoise animate-bggrain scroll-smooth bg-background font-sans text-primary dark:bg-background-dark"
+    onscroll="if (!inscroll) document.getElementById('menu').checked = false"
+  >
+    <div class="sm:grid sm:grid-cols-10">
+      <!-- hamburger button -->
+      <label
+        for="menu"
+        class="peer fixed right-8 top-20 z-30 flex flex-col items-end space-y-2 sm:hidden"
+      >
+        <input
+          type="checkbox"
+          name="menu"
+          id="menu"
+          class="peer right-8 top-16 z-10 hidden h-8 w-8"
+        />
+        <!-- animated divs as hamburger icon -->
+        <div
+          class="h-1 w-10 origin-top-right rounded-sm bg-primary shadow-sm transition-all peer-checked:w-9 peer-checked:-rotate-45"
+        ></div>
+        <div
+          class="h-1 w-8 rounded-sm bg-primary transition-all peer-checked:scale-0"
+        ></div>
+        <div
+          class="h-1 w-9 origin-bottom-right rounded-sm bg-primary transition-all peer-checked:rotate-45"
+        ></div>
+        <div
+          class="center absolute -z-10 h-7 w-7 -translate-y-2 translate-x-1 -rotate-6 rounded-md bg-secondary shadow-md shadow-primary/20 transition-all peer-checked:rotate-[84deg] peer-checked:scale-110"
+        ></div>
+      </label>
+      <!-- logo column -->
+      
+      <aside
+        class="ml-8 mt-8 max-w-44 sm:col-span-2 sm:ml-10 sm:mr-2 sm:mt-16 sm:max-w-48 lg:mr-10 xl:col-span-3"
+      >
+        <a href="/it/"
+          ><img
+            draggable="false"
+            class="cursor-pointe sticky top-16 z-10"
+            src="/assets/images/logosm.svg"
+            alt="Mateusz Cabizza is Kernel panic studio"
+        /></a>
+      </aside>
+      <main
+        class="mx-0 mt-[10vh] transition-all peer-has-[:checked]:mt-[calc(10vh+14rem)] sm:col-span-6 sm:mt-[20vh] xl:col-span-5"
+      >
+        
+
+    
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+        <img
+        class="size-full sm:rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/0.jpg"
+        alt=""
+        />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+    
+    <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
+
+        <h1 class="mb-3 font-serif text-3xl">
+            Memory Machine
+        </h1>
+        <div class="text-xl italic">
+            Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender.
+        </div>
+    </div>
+    
+    
+        
+    
+    
+        
+    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/1.jpg"
+        alt=""
+        />
+    </div>
+    
+        
+    
+    
+        
+    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/4.jpg"
+        alt=""
+        />
+    </div>
+    
+        
+    
+    
+        
+    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/2.jpg"
+        alt=""
+        />
+    </div>
+    
+        
+    
+    
+        
+    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/3.jpg"
+        alt=""
+        />
+    </div>
+    
+        
+    
+    
+        
+    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+        <img
+        class="size-full rounded-3xl object-cover"
+        src="/assets/images//projects/mmachine/5.jpg"
+        alt=""
+        />
+    </div>
+    
+        
+    
+    <ul class="col-span-full my-10 flex flex-wrap sm:mx-0">
+    
+    <li
+      class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
+    >
+      <a>blender</a>
+    </li>
+    
+    <li
+      class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
+    >
+      <a>illustrator</a>
+    </li>
+    
+  </ul>
+</div>
+      </main>
+      
+      <!-- <div id="nav" class="transition-all fixed sm:h-screen top-32 sm:top-0 translate-x-48 col-span-2 sm:mt-16 right-6 md:right-10 xl:right-32 sm:translate-x-0 origin-right"> -->
+      <nav
+        id="nav"
+        class="fixed right-6 top-36 z-20 col-span-2 origin-right translate-x-56 transition-all peer-has-[:checked]:translate-x-0 sm:right-0 sm:top-0 sm:mt-16 sm:h-screen sm:w-32 sm:translate-x-0 sm:transform-none md:right-5 xl:right-20"
+      >
+        <div
+          class="flex flex-col items-end text-4xl font-bold lowercase transition-all sm:items-start sm:text-2xl sm:font-normal"
+        >
+          
+<div id="home" class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary hover:shadow-md hover:shadow-primary/20 ">
+  <div id="neg-home"> 
+    <a href="/it/" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
+      Home
+    </a>
+  </div>
+</div>
+<div class="h-6 sm:h-3"></div>
+
+<div id="works" class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary hover:shadow-md hover:shadow-primary/20 ">
+  <div id="neg-works"> 
+    <a href="/it/gallery" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
+      Lavori
+    </a>
+  </div>
+</div>
+<div class="h-6 sm:h-3"></div>
+
+<div id="about" class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary hover:shadow-md hover:shadow-primary/20 ">
+  <div id="neg-about"> 
+    <a href="/it/about" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
+      Chi sono
+    </a>
+  </div>
+</div>
+<div class="h-6 sm:h-3"></div>
+
+<div id="contact" class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary hover:shadow-md hover:shadow-primary/20 ">
+  <div id="neg-contact"> 
+    <a href="/it/contacts" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
+      Contatti
+    </a>
+  </div>
+</div>
+<div class="h-6 sm:h-3"></div>
+
+        </div>
+        <!-- desktop language switcher -->
+        <div class="fixed bottom-4 right-4 hidden sm:flex">
+          
+
+  <a class="py-1 text-center w-28 sm:w-10 border-2  border-transparent" onclick="localStorage.setItem('preferredLang', 'en')" 
+  href="/projects/mmachine/"
+  
+  >en</a>
+
+
+
+  <a class="py-1 text-center w-28 sm:w-10 border-2  sm:bg-transparent sm:font-bold sm:text-primary sm:dark:text-primary bg-primary text-background dark:text-background-dark border-primary rounded shadow-md shadow-primary/20 pointer-events-none" 
+  
+  >it</a>
+
+
+        </div>
+      </nav>
+      <!-- mobile language switcher -->
+      <section
+        class="fixed bottom-8 left-[50%] z-20 flex translate-x-[-50%] translate-y-20 text-2xl transition-all peer-has-[:checked]:translate-y-0 sm:hidden"
+      >
+        
+
+  <a class="py-1 text-center w-28 sm:w-10 border-2  border-transparent" onclick="localStorage.setItem('preferredLang', 'en')" 
+  href="/projects/mmachine/"
+  
+  >en</a>
+
+
+
+  <a class="py-1 text-center w-28 sm:w-10 border-2  sm:bg-transparent sm:font-bold sm:text-primary sm:dark:text-primary bg-primary text-background dark:text-background-dark border-primary rounded shadow-md shadow-primary/20 pointer-events-none" 
+  
+  >it</a>
+
+
+      </section>
+      <!-- logo in hamburger menu -->
+      
+      <a
+        href="/it/"
+        class="fixed top-8 z-50 ml-8 max-w-44 cursor-pointer opacity-0 transition-all peer-has-[:checked]:opacity-100"
+        ><img
+          draggable="false"
+          src="/assets/images/logosm.svg"
+          alt="Mateusz Cabizza is Kernel panic studio"
+      /></a>
+      
+      <!-- semi transparent gradient in menu -->
+      <section
+        class="fixed left-0 top-0 h-full w-full origin-top scale-0 bg-background opacity-0 transition-opacity [mask-image:_linear-gradient(to_bottom,_black_35%,_transparent_60%,_transparent_80%,_black_95%)] peer-has-[:checked]:scale-100 peer-has-[:checked]:opacity-100 dark:bg-background-dark"
+      >
+        <div class="h-full bgnoise animate-bggrain"></div>
+      </section>
+    </div>
+  </body>
+</html>
