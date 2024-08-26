@@ -12,7 +12,6 @@ seo:
 
 plugins:
   - jekyll-postcss
-  - jekyll-seo-tag
   - ./_plugins/portfolio-generator.rb
 
 postcss:
