@@ -1,25 +1,19 @@
 url: 'https://kernelpanic.studio/'
 baseurl: ''
 title: 'Mateusz Cabizza is Kernel Panic Studio'
-description:
-  en: 'Personal portfolio of a designer, webdev and 3D artist. Available for hire!'
-  it: ''
-image:
-  url: '/assets/images/default.webp'
-  alt:
-    en: 'Kernel Panic Studio logo'
-    it: 'Il logo di Kernel Panic Studio'
+description: 'Personal portfolio of a designer, webdev and 3D artist.'
+
+seo:
+  name: 'Mateusz Cabizza is Kernel Panic Studio'
+  description: 'Personal portfolio of a designer, webdev and 3D artist. Available for hire!'
+  author: 'Mateusz Cabizza'
+  image: '/assets/default.webp'
+
 
 plugins:
   - jekyll-postcss
-  # - jekyll-polyglot
+  - jekyll-seo-tag
   - ./_plugins/portfolio-generator.rb
-
-#polyglot
-languages: ["en", "it"]
-default_lang: "en"
-exclude_from_localization: ["assets", "css", "js", "CNAME", "README.md", "package-lock.json"]
-path: ":lang/:url"
 
 postcss:
   cache: false
@@ -31,6 +25,7 @@ exclude:
   - node_modules
   - Gemfile
 
-# portfolio generator
+
+
 portfolio_dir: "projects"
 skip_related_projects: true
