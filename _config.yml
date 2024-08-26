@@ -7,8 +7,8 @@ description:
 image:
   url: '/assets/images/default.webp'
   alt:
-    en: 'eng'
-    it: 'ita'
+    en: 'Kernel Panic Studio logo'
+    it: 'Il logo di Kernel Panic Studio'
 
 plugins:
   - jekyll-postcss

@@ -27,7 +27,6 @@ jobs:
 
       - name: Install dependencies
         run: |
-          rm -rf node_modules/
           npm install
 
       - name: 🔨 install dependencies & build site
