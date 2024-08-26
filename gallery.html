@@ -4,7 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta charset="utf-8" />
 		<title>
-			 Works - Mateusz Cabizza is Kernel Panic Studio 
+			 {"en"=>"Works", "it"=>"Lavori"} - Mateusz Cabizza is Kernel Panic Studio 
 		</title>
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link
@@ -52,6 +52,8 @@
 					name="menu"
 					id="menu"
 					
+					onchange="window.scrollTo({top: 0, behavior: 'smooth'}); inscroll=true; setTimeout(function(){inscroll=false}, 800);"
+					
 					class="top-16 right-8 w-8 h-8 peer group hidden z-10"
 				/>
 				<div
@@ -84,322 +86,501 @@
 				class="transition-all sm:col-span-6 xl:col-span-5 mx-0 mt-[10vh] sm:mt-[20vh] peer-has-[:checked]:mt-[calc(10vh+14rem)]"
 			>
 				
-
-<div class="m-auto grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 mx-8 sm:mx-0 sm:-mt-5 mb-10">
-  
-    
-    <div class="invisible aspect-[3/1] row-span-1 hidden sm:block"></div>
-    
-    
-    
-    <div id='a3D' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+<div
+  class="m-auto mx-8 mb-10 grid grid-cols-1 sm:mx-0 sm:-mt-5 sm:grid-cols-2 lg:grid-cols-3"
+>
+   
+  <section class="invisible row-span-1 hidden aspect-[3/1] sm:block"></section>
+     
+  <section
+    id="a3D"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*1); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/mmachine">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/mmachine/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/mmachine/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               The Memory Machine
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             The Memory Machine
-          </p>
+          </h2>
         </div>
       </a>
     </div>
+  </section>
     
-    
-    
-    <div class="invisible aspect-[3/2] row-span-2 hidden lg:block"></div>
-    
-    
-    
-    <div id='a3D' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-primary" >
+  <section class="invisible row-span-2 hidden aspect-[3/2] lg:block"></section>
+     
+  <section
+    id="a3D"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*2); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-primary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/macbook">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/macbook/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/macbook/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               iMac to go
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreapinv.png); ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreapinv.png); "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-secondary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-secondary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             iMac to go
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='aillustrations' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="aillustrations"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*3); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/coffee">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/coffee/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/coffee/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Mean cuppa
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Mean cuppa
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='abrand identity' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="abrand identity"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*4); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/fish">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/fish/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/fish/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Rustling pages brand identity
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Rustling pages brand identity
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='aillustrations' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="aillustrations"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*5); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/music">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/music/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/music/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Music production
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Music production
-          </p>
+          </h2>
         </div>
       </a>
     </div>
+  </section>
     
-    
-    
-    <div class="invisible aspect-[3/2] row-span-2 hidden lg:block"></div>
-    
-    
-    
-    <div id='a3D' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  <section class="invisible row-span-2 hidden aspect-[3/2] lg:block"></section>
+     
+  <section
+    id="a3D"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*6); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/cars">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/cars/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/cars/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Tiny cars
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Tiny cars
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='aillustrations' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="aillustrations"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*7); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/egg">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/egg/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/egg/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Eggplant
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Eggplant
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='a3D' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="a3D"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*8); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/lipstick">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/lipstick/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/lipstick/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Pastel glitter
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Pastel glitter
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='abrand identity' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="abrand identity"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*9); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/neodentist">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/neodentist/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/neodentist/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Neon dentist
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Neon dentist
-          </p>
+          </h2>
         </div>
       </a>
     </div>
+  </section>
     
+  <section class="invisible row-span-1 hidden aspect-[3/1] sm:block"></section>
     
-    
-    <div class="invisible aspect-[3/1] row-span-1 hidden sm:block"></div>
-    
-    
-    
-    <div class="invisible aspect-square row-span-3 hidden lg:block"></div>
-    
-    
-    
-    <div id='aicons' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-primary" >
+  <section class="invisible row-span-3 hidden aspect-square lg:block"></section>
+     
+  <section
+    id="aicons"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*10); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-primary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/icons">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/icons/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/icons/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               icons
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreapinv.png); ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreapinv.png); "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-secondary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-secondary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             icons
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='aillustrations' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-primary" >
+  </section>
+     
+  <section
+    id="aillustrations"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*11); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-primary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/cmdz">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/cmdz/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/cmdz/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Command Z
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreapinv.png); ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreapinv.png); "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-secondary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-secondary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Command Z
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    <div id='aillustrations' class="sm:m-5 xl:m-4 lg:m-3 my-auto mb-10 rounded-3xl sm:bg-transparent shadow-lg shadow-primary/30 row-span-3 sm:aspect-square sm:hover:scale-125 sm:hover:bg-secondary sm:hover:rotate-3 transition-all group bg-secondary" >
+  </section>
+     
+  <section
+    id="aillustrations"
+    class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
+    style="animation-delay: calc(50ms*12); animation-fill-mode: forwards"
+  >
+    <div
+      class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
+    >
       <a href="/projects/casio">
-        <div class="bg-primary rounded-t-3xl sm:rounded-3xl sm:group-hover:scale-90 sm:group-hover:-rotate-3 transition-all sm:group-hover:shadow-lg bg-cover aspect-square" style="background-image: url(/assets/images/projects/casio/thumb.webp);">
-
-          <div class="transition-all flex items-end sm:group-hover:bg-primary/30 rounded-3xl sm:bg-transparent sm:h-full">
-            <p class="transition-all italic text-transparent sm:group-hover:text-secondary text-3xl font-sans ml-4 mb-4 pt-4 hidden overflow-hidden sm:block">
+        <div
+          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-image: url(/assets/images/projects/casio/thumb.jpg)"
+        >
+          <div
+            class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
+          >
+            <h2
+              class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
+            >
               Casio
-            </p>
+            </h2>
           </div>
-          <div class="flex sm:hidden items-end size-full">
-            <div class="bg-contain bg-repeat-x bg-bottom w-full h-8 animate-bggallery translate-y-1" style=" background-image: url(/assets/images/wavephotoreap.png) ">
-            </div>
+          <div class="flex size-full items-end sm:hidden">
+            <div
+              class="h-8 w-full translate-y-1 animate-bggallery bg-contain bg-bottom bg-repeat-x"
+              style=" background-image: url(/assets/images/wavephotoreap.png) "
+            ></div>
           </div>
         </div>
-        <div class="flex items-end sm:hidden overflow-x-hidden">
-          <p class="text-primary sm:text-secondary text-4xl lowercase mx-6 mt-3 mb-5 sm:hidden italic leading-9">
+        <div class="flex items-end overflow-x-hidden sm:hidden">
+          <h2
+            class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
+          >
             Casio
-          </p>
+          </h2>
         </div>
       </a>
     </div>
-    
-    
-    
-    
+  </section>
+   
 </div>
-
-
 
 			</div>
 			
@@ -423,7 +604,7 @@ class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary ho
 <div class="h-6 sm:h-3"></div>
 
 <div id="Works"  
-class="transition-all flex items-center w-fit h-7 rounded  bg-secondary shadow-md shadow-primary/20 ">
+class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary hover:shadow-md hover:shadow-primary/20 ">
   <div id="neg-Works"" class=""> 
     <a href="/gallery.html" class="sm:rounded-md px-3 sm:px-1 sm:py-1 ">
       Works
@@ -461,15 +642,6 @@ class="transition-all flex items-center w-fit h-7 rounded  hover:bg-secondary ho
     </a> -->
 				</nav>
 			</div>
-			
-			<a
-				href="/"
-				class="z-50 ml-8 top-8 max-w-44 fixed cursor-pointer scale-y-0 peer-has-[:checked]:scale-y-100"
-				><img
-					draggable="false"
-					src="/assets/images/logosm.svg"
-					alt="Mateusz Cabizza is Kernel panic studio"
-			/></a>
 			
 			<div
 				class="transition-all fixed h-[40rem] w-full top-0 left-0 origin-top scale-y-0 peer-has-[:checked]:scale-y-100 bg-background dark:bg-background-dark [mask-image:_linear-gradient(to_bottom,_black_55%,_transparent_100%)]"
