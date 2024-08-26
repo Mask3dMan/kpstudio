@@ -2,11 +2,11 @@
 
   <a class="py-1 text-center w-28 sm:w-10 border-2 {% if lang == site.active_lang %} sm:bg-transparent sm:font-bold sm:text-primary sm:dark:text-primary bg-primary text-background dark:text-background-dark border-primary rounded shadow-md shadow-primary/20 pointer-events-none" 
   {% else %} border-transparent" onclick="localStorage.setItem('preferredLang', '{{ lang }}')" 
-  {% static_href %} 
+
   href="{% if lang == site.default_lang %}{{site.baseurl}}{{page.url}}"
   {% else %}{{site.baseurl}}/{{ lang }}{{page.url}}"
   {% endif %}
-  {% endstatic_href %}
+
   {% endif %}
   >{{ lang }}</a>
 
