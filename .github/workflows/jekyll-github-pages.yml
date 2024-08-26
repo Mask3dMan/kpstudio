@@ -31,10 +31,8 @@ jobs:
           gem install
 
       - name: 🔨 install dependencies & build site
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: false
-
+        run: bundle exec jekyll build
+        
       - name: 🚀 deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
