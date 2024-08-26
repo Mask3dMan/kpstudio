@@ -12,7 +12,7 @@ image:
 
 plugins:
   - jekyll-postcss
-  # - jekyll-polyglot
+  - jekyll-polyglot
   - ./_plugins/portfolio-generator.rb
 
 #polyglot
