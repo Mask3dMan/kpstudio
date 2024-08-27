@@ -4,11 +4,17 @@ title: Home
 permalink: /
 ---
 
-<div class="mr-24 w-full max-w-[100%] animate-fadeIn overflow-x-clip sm:w-auto">
+<div class="mr-24 w-full max-w-full animate-fadeIn sm:w-auto">
   <img
-    class="scale-110 sm:left-auto sm:scale-100"
+    class="sm:block hidden left-auto scale-100"
     draggable="false"
     src="{{ '/assets/images/logo.svg' | relative_url }}"
+    alt="Mateusz Cabizza is Kernel panic studio"
+  />
+  <img
+    class="sm:hidden"
+    draggable="false"
+    src="{{ '/assets/images/logomobile.svg' | relative_url }}"
     alt="Mateusz Cabizza is Kernel panic studio"
   />
 </div>
