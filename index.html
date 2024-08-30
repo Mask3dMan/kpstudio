@@ -29,7 +29,7 @@
 <meta property="og:url" content="https://kernelpanic.studio//" />
 <meta
   property="og:image"
-  content="/assets/images/default.webp"
+  content="./assets/images/default.webp"
 />
 <meta
   property="og:image:alt"
@@ -37,7 +37,7 @@
 />
 <link rel="canonical" href="https://kernelpanic.studio//" />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
     <link
       rel="stylesheet"
       href="/assets/css/style.css"
@@ -92,7 +92,7 @@
 <meta property="og:url" content="https://kernelpanic.studio//" />
 <meta
   property="og:image"
-  content="/assets/images/default.webp"
+  content="./assets/images/default.webp"
 />
 <meta
   property="og:image:alt"
@@ -107,12 +107,12 @@
         if (!localStorage.getItem('preferredLang')) {
           var userLang = navigator.language || navigator.userLanguage; // Detect browser language
 
-          // Default to the English version (assuming English is the default language)
+          // Default to the English version
           var defaultLang = "en";
           var supportedLanguages = ["en","it"]; // List of supported languages
 
           // Check if the detected language is supported
-          var langPrefix = userLang.split('-')[0]; // Extract primary language code (e.g., 'en' from 'en-US')
+          var langPrefix = userLang.split('-')[0];
           if (supportedLanguages.includes(langPrefix)) {
             // Redirect to the corresponding language version if it's not the default
             if (langPrefix !== defaultLang) {
@@ -190,7 +190,7 @@
   >
     <img src="/assets/images/floater.svg" class="" />
   </div>
-  <div class="fixed bottom-24 left-0 w-full">
+  <div class="fixed bottom-12 xs:bottom-24 left-0 w-full">
     <div
       class="h-12 animate-bgmovesm bg-contain bg-repeat-x sm:h-16 sm:animate-bgmove landscapes:hidden"
       style="background-image: url('/assets/images/wave%20pink.png')"

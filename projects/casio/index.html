@@ -29,7 +29,7 @@
 <meta property="og:url" content="https://kernelpanic.studio//projects/casio/" />
 <meta
   property="og:image"
-  content="/assets/images/default.webp"
+  content="./assets/images/default.webp"
 />
 <meta
   property="og:image:alt"
@@ -37,7 +37,7 @@
 />
 <link rel="canonical" href="https://kernelpanic.studio//projects/casio/" />
 
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/tailwind.css" />
     <link
       rel="stylesheet"
       href="/assets/css/style.css"
@@ -92,7 +92,7 @@
 <meta property="og:url" content="https://kernelpanic.studio//projects/casio/" />
 <meta
   property="og:image"
-  content="/assets/images/default.webp"
+  content="./assets/images/default.webp"
 />
 <meta
   property="og:image:alt"
@@ -107,12 +107,12 @@
         if (!localStorage.getItem('preferredLang')) {
           var userLang = navigator.language || navigator.userLanguage; // Detect browser language
 
-          // Default to the English version (assuming English is the default language)
+          // Default to the English version
           var defaultLang = "en";
           var supportedLanguages = ["en","it"]; // List of supported languages
 
           // Check if the detected language is supported
-          var langPrefix = userLang.split('-')[0]; // Extract primary language code (e.g., 'en' from 'en-US')
+          var langPrefix = userLang.split('-')[0];
           if (supportedLanguages.includes(langPrefix)) {
             // Redirect to the corresponding language version if it's not the default
             if (langPrefix !== defaultLang) {
@@ -166,12 +166,12 @@
       <!-- logo column -->
       
       <aside
-        class="ml-8 mt-8 max-w-44 sm:col-span-2 sm:ml-10 sm:mr-2 sm:mt-16 sm:max-w-48 lg:mr-10 xl:col-span-3"
+        class="ml-8 mt-8 sm:col-span-2 sm:ml-10 sm:mr-2 sm:mt-16 sm:max-w-48 lg:mr-10 xl:col-span-3"
       >
         <a href="/"
           ><img
             draggable="false"
-            class="cursor-pointe sticky w-44 top-16 z-10 sm:w-auto"
+            class="cursor-pointe sticky w-44 min-h-20 top-16 z-10 sm:w-auto"
             src="/assets/images/logosm.svg"
             alt="Mateusz Cabizza is Kernel panic studio"
         /></a>
@@ -319,7 +319,7 @@
       
       <a
         href="/"
-        class="fixed top-8 z-50 ml-8 max-w-44 cursor-pointer opacity-0 transition-all peer-has-[:checked]:opacity-100"
+        class="fixed top-8 z-50 ml-8 w-44 min-h-20 cursor-pointer opacity-0 transition-all peer-has-[:checked]:opacity-100"
         ><img
           draggable="false"
           src="/assets/images/logosm.svg"
