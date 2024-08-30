@@ -5,7 +5,7 @@ description:
   en: 'Personal portfolio of a designer, webdev and 3D artist. Available for hire!'
   it: ''
 image:
-  url: '/assets/images/default.webp'
+  url: './assets/images/default.webp'
   alt:
     en: 'Kernel Panic Studio logo'
     it: 'Il logo di Kernel Panic Studio'
@@ -20,9 +20,8 @@ languages: ["en", "it"]
 default_lang: "en"
 exclude_from_localization: ["assets", "css", "js", "CNAME", "README.md", "package-lock.json"]
 path: ":lang/:url"
+parallel_localization: false
 
-postcss:
-  cache: false
 
 exclude:
   - package.json

@@ -88,6 +88,7 @@ module.exports = {
 				landscapes: {
 					raw: `only screen and (max-height: 600px) and (orientation: landscape)`,
 				},
+				xs: '376px',
 			},
 		},
 	},
