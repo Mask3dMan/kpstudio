@@ -38,16 +38,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = {{ site.languages | jsonify }};
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "{{ site.default_lang }}") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "{{ site.active_lang }}") {
               window.location.href = "{{ site.baseurl }}/" + langPrefix + "{{ page.url }}";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
