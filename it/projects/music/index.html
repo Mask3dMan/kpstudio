@@ -103,27 +103,22 @@
     <script src="/assets/js/main.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
+        const supportedLanguages = ["en","it"];
         // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
-          var userLang = navigator.language || navigator.userLanguage; // Detect browser language
-
-          // Default to the English version
-          var defaultLang = "en";
-          var supportedLanguages = ["en","it"]; // List of supported languages
-
+          const userLang = navigator.language || navigator.userLanguage;
           // Check if the detected language is supported
-          var langPrefix = userLang.split('-')[0];
+          const langPrefix = userLang.split('-')[0];
           if (supportedLanguages.includes(langPrefix)) {
             // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== defaultLang) {
+            if (langPrefix !== "en") {
               window.location.href = "/" + langPrefix + "/projects/music/";
             }
           }
         } else {
-          // If language preference is stored, no redirection occurs
-          var preferredLang = localStorage.getItem('preferredLang');
+          const preferredLang = localStorage.getItem('preferredLang');
           if (preferredLang !== "it") {
-            if (preferredLang === defaultLang) {
+            if (preferredLang === "en") {
               window.location.href = "/projects/music/";
             } else {
               window.location.href = "/" + preferredLang + "/projects/music/";
