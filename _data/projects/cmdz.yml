@@ -3,11 +3,12 @@ title:
   en: CMD-Z
   it: CMD-Z
 description:
-  en:
+  en: 
   it: 
 imgs:
 - url: 0
   size: hero
+  aspect: 1/1
   alt: 
 
 tecnologies: 

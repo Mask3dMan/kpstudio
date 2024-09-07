@@ -27,8 +27,8 @@ permalink: /gallery
     >
       <a href="{{ '/projects/' | relative_url | append: item.link }}">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.jpg' }})"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: {{ site.data.colors[item.link].thumb }}; background-image: url({{ '/assets/images/projects/' | relative_url | append: item.link | append: '/thumb.jpg' }}), url(data:image/jpg;base64,{{ site.data.blur[item.link].thumb }}"
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"

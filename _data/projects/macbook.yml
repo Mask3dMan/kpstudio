@@ -2,32 +2,57 @@ url: macbook
 title: 
   en: iMac to go
   it:
-description: 
-  en: I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup.
-  it:
+description:
+  en: A personal project inspired by Apple’s 2020 iMac colors, reimagining a vibrant, modern MacBook. Featuring a slim M3 MacBook Air profile and bold duotone colors in five variants, this 3D render brings a fun, colorful twist to the classic design.
+  it: Un progetto personale ispirato ai colori dell’iMac del 2020 di Apple, che reimmagina un MacBook sgargiante e moderno. Caratterizzato dal profilo sottile del MacBook Air M3 e colori audaci in duotono in cinque varianti, questo render 3D porta un tocco divertente e colorato al design classico.
+projectdescription: 
+  en: '<p>This project started first as a simple idea (or more precisely, a wish) after Apple released the 2020 iMac model, the first Mac to feature bold colors in over two decades. I’ve always been a fan of their industrial design, and I also always wanted to see a modern interpretation of a colorful laptop.</p>
+  <p>The years went by, and Apple never ended up releasing a truly rainbowy series of MacBooks, and my 3D skills condinued to improve, so I decided to take matters into my own hands, and at least create a render of what I imagined it could look like. </p>
+  <p>The result is a laptop which fuses the slim M3 MacBook Air profile, with the 2020 iMac bold duotone color. It comes in five different variants: red, orange, green, blue, and purple. It’s a fun project, and I hope you enjoy it as much as I did creating it.</p>'
+  it: '<p>Questo progetto è nato prima di tutto come un’idea semplice (o più precisamente, un desiderio) dopo che Apple ha rilasciato l’iMac del 2020, il primo Mac a presentare colori audaci da oltre due decadi. Sono sempre stato un fan del loro design industriale, e ho sempre voluto vedere un’interpretazione moderna di un portatile colorato.</p> 
+  <p>Gli anni passano, e Apple non ha (tuttora) rilasciato una serie di MacBooks veramente arcobaleno. A questo punto le mie abilità nella modellazione 3D sono cresciute al punto di decidere di prendere io in mano la situazione, e almeno un render di come potesse apparire un tale laptop.</p> 
+  <p>Il risultato è un portatile che fonde il profilo sottile del MacBook Air M3, con i colori audaci in duotono dell’iMac 2020. "Prodotto" in cinque varianti diverse: rosso, arancione, verde, blu e viola. È stato un progetto divertente, e spero che vi piaccia tanto quanto è piaciuto a me crearlo.</p>'
 imgs:
 - url: 0
   size: hero
+  aspect: 4/3
   alt: A showcase of all the colors of this imaginary Apple laptop
 - url: 1
   size: full
-  alt: red Apple laptop seen from the front
+  aspect: 1/1
+  alt: 
+    en: red Apple laptop seen from the front
+    it: portatile Apple rosso visto di fronte
 - url: 2
   size: 
+  aspect: 1/1
   alt:
+    en: a dettail of the right side of a green Apple laptop
+    it: dettaglio del lato destro di un portatile Apple verde
 - url: 3
   size: 
+  aspect: 1/1
   alt:
+    en: a purple Apple laptop seen from above
+    it: portatile Apple viola visto dall'alto
 - url: 5
   size: full
+  aspect: 1/1
   alt:
+    en: the full lineup of the colorful Apple laptops, seen from the left side, all closed
+    it: la linea completa dei portatili Apple colorati, visti dal lato sinistro, tutti chiusi
 - url: 4
   size: 
-  alt:
+  aspect: 1/1
+  alt: 
+    en: an orange Apple laptop in a tent position, mimikind an old iBook advertisement
+    it: un portatile Apple arancione in posizione a tenda, imitando un vecchio annuncio dell'iBook
 - url: 6
   size: 
+  aspect: 1/1
   alt:
-  aspect: square
+    en: a green Apple laptop half closed in the dark
+    it: un portatile Apple verde semi chiuso al buio
 
 tecnologies: 
 - blender

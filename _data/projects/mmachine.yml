@@ -2,28 +2,67 @@ url: mmachine
 title: 
   en: The Memory Machine
   it: Memory Machine
-description: 
-  en: A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos.
-  it: Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender.
+description:
+  en: The Memory Machine, a wooden instant camera with a color e-ink display. A camera that makes you think about the permanence of a photo.
+  it: Memory Machine, una fotocamera istantanea di legno con uno schermo a e-ink a colori. Una fotocamera che ti fa riflettere sulla permanenza di una foto.
+
+projectdescription:
+  en: '<p>This projects starts way back in Univerity. During the "product design" course, we were asked to choose an object, without really any guidance in particular. I chose an old film camera, as I was really starting to appreciate photography, and what it meant to capture a moment, in those years.</p>
+  <p>The first half of the course was dedicated to the study of the object, how it relates to our perception, how it works, and how to operate it. Pretty ordinary stuff.</p>
+  <p>Right after that, we were asked to design a brand new product which somehow transformed the old object. Firstly I thought of a digital camera that felt like an old film camera, with mechanical controls, and maybe film themed memory cards, but that felt a bit too… Safe?</p>
+  <p>Back to the drawing board. I started thinking about what it means to take a photo. I started thinking about my photo library with 20k+ photos, a good part of it I didn’t really felt attached to. Beside a newfound decluttering urge, I started pondering about how photos are now a commodity, and how they are stored in the cloud, and how they are shared, and how they are forgotten.</p>
+  <p>I wanted to make something to subvert this whole idea. A camera that could only take one photo at a time, and that would erase the previous one when a new one was taken. No storage, no live view, no memory card, just a color e-ink screen that can hold a picture indefinitely.</p>
+  <p>And so, the Memory Machine was born. A camera that would make you think about the permanence of a photo, and how it’s not just a file in a folder, but a moment in time, that you can hold in your hands.</p>
+  <p>Inspired both by old instant cameras, and by the wooden picture frames that my grandma used to have in her house, I wanted the Memory Machine to be as much a camera as a piece of furniture, looking right at home in a living room, or in a studio.</p>
+  <p>During the coruse, the camera was designed on paper, refined in Illustrator, and mocked up with cardboard and tape. I even did a rough render in Cinema4D, but due to time and technical constraints, it never managed to look as good as it deserved. So, years later, I decided to model it all again, in Blender this time, and give the attention it needed.</p>'
+  it: '<p>Questo progetto nasce durante I miei anni all’università. Durante il corso di “product design”, ci è stato chiesto di scegliere un oggetto, senza particolari indicazioni. Ho scelto una vecchia macchina fotografica a pellicola, poiché stavo iniziando a capire l’importanza della fotografia, e cosa significasse catturare un momento, in quegli anni.</p>
+  <p>La prima metà del corso è stata dedicata allo studio dell’oggetto, come si relaziona alla nostra percezione, come funziona, e come si opera. Cose abbastanza ordinarie.</p>
+  <p>Subito dopo, ci è stato chiesto di progettare un nuovo prodotto che trasformasse in qualche modo il vecchio oggetto. Inizialmente ho pensato a una fotocamera digitale che funzionasse come una vecchia fotocamera a pellicola, con controlli meccanici, e magari schede di memoria a tema rullino, ma mi sembrava un po’ troppo… Scontato?</p>
+  <p>Tornato al tavolo da disegno, ho iniziato a pensare a cosa significhi scattare una foto. Ho iniziato a pensare alla mia libreria fotografica con più di 20 mila foto, di cui a una buona parte non mi sentivo davvero legato. Oltre a un nuovo impulso al decluttering, ho iniziato a riflettere su come le foto siano ora una merce, e su come siano archiviate nel cloud, e su come siano condivise, e su come siano dimenticate.</p>
+  <p>Volevo creare qualcosa per sovvertire tutta questa idea. Una fotocamera che potesse scattare solo una foto alla volta, e che cancellasse quella precedente quando se ne scatta una nuova. Nessuna vista in tempo reale, nessuna scheda di memoria, solo uno schermo a e-ink a colori che può contenere una foto indefinitamente.</p>
+  <p>E così è nata la Memory Machine. Una fotocamera che ti fa riflettere sulla permanenza di una foto, e su come non sia solo un file in una cartella, ma un momento nel tempo, che puoi tenere tra le mani.</p>
+  <p>Ispirata sia alle vecchie fotocamere istantanee, che ai portafoto di legno che mia nonna aveva in casa, volevo che la Memory Machine fosse tanto una fotocamera quanto un accessorio, che stesse bene in un salotto, o in uno studio.</p>
+  <p>Durante il corso, la fotocamera è stata progettata su carta, rifinita in Illustrator, e simulata con cartone e nastro adesivo. Ho persino fatto un render grezzo in Cinema4D, ma a causa di vincoli di tempo e tecnici, non è mai riuscito a catturare davvero la mia idea. Così, anni dopo, ho deciso di modellarlo tutto di nuovo, questa volta in Blender, e dargli l’attenzione che meritava.</p>'
+olddesc: 
+  en: A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. I designed it as a reflection on permanence and commodification of photos.
+  it: Progetto di una fotocamera istantanea per l'era moderna, modellata in Blender. Ha un display a e-ink a colori nascosto dietro due porte di legno, e nessuna memoria a stato solido. Può scattare (e visualizzare) una sola foto alla volta. Quando se ne scatta una nuova, la precedente viene cancellata. Fa anche da cornice per foto. L'ho progettata come riflessione sulla permanenza e sulla mercificazione delle foto.
 imgs:
 - url: 0
+  aspect: 3/4
   size: hero
   alt:
+    en: The Memory Machine in pink, on a stack of other Memory Machines
+    it: La Memory Machine in rosa, su uno stack di altre Memory Machines
 - url: 1
   size:
+  aspect: 1/1
   alt:
+    en: A dettail of the retractile lens system of the Memory Machine
+    it: Dettaglio del sistema di obiettivo retrattile della Memory Machine
 - url: 4
   size:
+  aspect: 1/1
   alt:
+    en: The Memory Machine in blue and pink, on a wooden table
+    it: La Memory Machine in blu ed in rosa, su un tavolo di legno
 - url: 2
   size: full
+  aspect: 1/1
   alt:
+    en: a dettail of the materials and finishing of the Memory Machine
+    it: dettaglio dei materiali e delle finiture della Memory Machine
 - url: 3
   size:
+  aspect: 1/1
   alt:
+    en: the Memory Machine in frame mode, showing a picture on a shelf
+    it: la Memory Machine in modalità cornice, mostrando una foto su uno scaffale
 - url: 5
   size:
+  aspect: 1/1
   alt:
+    en: dettail of the color e-ink display of the Memory Machine
+    it: dettaglio dello schermo a e-ink a colori della Memory Machine
 
 tecnologies: 
 - blender

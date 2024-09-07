@@ -3,15 +3,24 @@ title:
   en: Tiny cars
   it: Tiny cars
 description: 
-  en: Illustration done in fully in Blender, without external resources or tools. An exploration of expressive lowpoly modeling and unconventional shaders.
-  it: Illustrazione fatte completamente in Blender, senza risorse esterne o tool aggiuntivi. Un'esplorazione di modellazione lowpoly, e utilizzo di shader non convenzionali.
+  en: &descen Illustration done in fully in Blender, without external resources or tools. An exploration of expressive lowpoly modeling and unconventional shaders.
+  it: &descit Illustrazione fatte completamente in Blender, senza risorse esterne o tool aggiuntivi. Un'esplorazione di modellazione lowpoly, e utilizzo di shader non convenzionali.
+projectdescription:
+  en: *descen
+  it: *descit
 imgs:
 - url: 0
   size: hero
-  alt: A stylized and beaten up Fiat panda, lo poli and pixelated 3d graphics
+  aspect: 1/1
+  alt: 
+    en: A stylized and beaten up Fiat panda, low poly and pixelated 3d graphics
+    it: Una Fiat Panda stilizzata e malconcia, grafica 3d low poly e pixelata
 - url: 1
   size: full
-  alt: A city car encountering a glowing rock at night
+  aspect: 1/1
+  alt:
+    en: A city car encountering a glowing rock at night, low poly and pixelated 3d graphics
+    it: Una city car che incontra una roccia luminosa di notte, grafica 3d low poly e pixelata
 
 tecnologies: 
 - blender

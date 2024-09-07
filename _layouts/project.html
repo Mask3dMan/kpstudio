@@ -1,37 +1,43 @@
 ---
 layout: default
 ---
+{% assign current_project = page.url |  split: '/'| last %}
 {% for img in page.imgs%}
 {% if img.size == 'hero' %}
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: {{ img.aspect }}; background-color:{{ site.data.colors[current_project][img.url] }}" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
-        alt="{{ img.alt }}"
+        alt="{{ img.alt[site.active_lang] }}"
+        style="background-image: url('data:image/jpg;base64,{{ site.data.blur[current_project][img.url] }}'); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 {% endif %}
 {% endfor %}
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             {{page.title[site.active_lang]}}
         </h1>
-        <div class="text-xl italic">
-            {{page.description[site.active_lang]}}
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
+            {{page.projectdescription[site.active_lang]}}
         </div>
     </div>
     {% for img in page.imgs%}
     {% unless img.size == 'hero' %}
         
-    <div class="{% if img.size == 'full' %} col-span-full {% elsif img.size == 'third' %} col-span-2 {% else %} col-span-3 {% endif %} shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full {% if img.size == 'full' %} col-span-full {% else %} col-span-3 {% endif %} shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: {{ img.aspect }}; background-color:{{ site.data.colors[current_project][img.url] }}">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
-        alt="{{img.alt}}"
+        alt="{{img.alt[site.active_lang]}}"
+        style="background-image: url('data:image/jpg;base64,{{ site.data.blur[current_project][img.url] }}'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     {% endunless %}

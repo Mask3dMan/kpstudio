@@ -3,15 +3,18 @@ title:
   en: Eggplant
   it:
 description: 
-  en: Eggplant
-  it:
+  en: &descen A plant with a fried egg instead of the flower. Born from the wordplay between "egg" and "eggplant".
+  it: &descit Una pianta con un uovo fritto al posto del fiore. Nata dal gioco di parole tra "egg" (uovo) e "eggplant" (melanzana).
+projectdescription: 
+  en: *descen
+  it: *descit
 imgs:
 - url: 0
   size: hero
+  aspect: 1/1
   alt: A plant with a fried egg instead of the flower
 
 tecnologies: 
-- photoshop
 - illustrator
 
 category:

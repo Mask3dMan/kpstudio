@@ -3,16 +3,25 @@ title:
   en: Rustling pages brand identity
   it: Pagine fruscianti
 description: 
-  en: 'Logo, brand identity and social templates for an educational Instagram creator catering new music producers and audio enthusiasts. It is a fresh take on 70s music poster and magazines aestetic, keeping a paper like texture and feel, while incorporating fresh and modern elements. The logo is rooted in what a sound essentialy is: a wave.'
-  it:
+  en: &descen 'Logo, brand identity and social templates for an educational Instagram creator catering new music producers and audio enthusiasts. It is a fresh take on 70s music poster and magazines aestetic, keeping a paper like texture and feel, while incorporating fresh and modern elements. The logo is rooted in what a sound essentialy is: a wave.'
+  it: &descit 'Logo, brand identity e template per social per un creatore Instagram educativo che si rivolge a nuovi produttori musicali e appassionati di audio. Si tratta di una rivisitazione fresca dell’estetica dei poster e delle riviste musicali degli anni ’70, mantenendo una texture e una sensazione simili alla carta, mentre incorpora elementi freschi e moderni. Il logo è radicato in ciò che è essenzialmente un suono: un’onda.'
+projectdescription:
+  en: *descen
+  it: *descit
 imgs:
 - url: 0
   size: full
-  alt: logo and palette
+  aspect: 1/1
+  alt: 
+    en: five color palette (dark gray, intense orange, light orange, mint green, offwhite) showcase, with the wavefish logo
+    it: palette di cinque colori (grigio scuro, arancione intenso, arancione chiaro, verde menta, bianco sporco), con il logo wavefish
 - url: 1
   aspect: wide
   size: hero
-  alt: design showcase
+  aspect: 4/3
+  alt: 
+    en: showcase of the brand identity, with various instagram templates, mockups and icons
+    it: showcase della brand identity, con vari template per instagram, mockup e icone
 
 tecnologies: 
 - indesign

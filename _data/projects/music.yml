@@ -3,17 +3,20 @@ title:
   en: Music production
   it:
 description: 
-  en: Simple illustrations to showcase the gear I use for my music making hobby.
-  it: Semplici illustrazioni, create come showcase dell'atrezzatura che utilizzo nel mio hobby di fare musica.
+  en: &descen Simple illustrations to showcase the gear I use for my music making hobby.
+  it: &descit Semplici illustrazioni, create come showcase dell'atrezzatura che utilizzo nel mio hobby di fare musica.
+projectdescription:
+  en: *descen
+  it: *descit
 imgs:
 - url: 0
   size: hero
   alt:
-  aspect: square
+  aspect: 1/1
 - url: 1
   size: full
   alt:
-  aspect: square
+  aspect: 1/1
 tecnologies: 
 - illustrator
 - photoshop

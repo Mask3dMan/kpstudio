@@ -12,15 +12,15 @@
   link:
 
 - name: iMac to go
-  alt:
+  alt: colorful Apple laptops
   link: macbook
   inv : true
   cat : 3D
 
-- name: Mean cuppa
+- name: Glitter pastel
   alt:
-  link: coffee
-  cat : illustrations
+  link: lipstick
+  cat : 3D
 
 - name: Rustling pages brand identity
   alt:
@@ -46,11 +46,10 @@
   link: egg
   cat : illustrations
 
-
-- name: Pastel glitter
+- name: Mean cuppa
   alt:
-  link: lipstick
-  cat : 3D
+  link: coffee
+  cat : illustrations
 
 - name: Neon dentist
   alt:

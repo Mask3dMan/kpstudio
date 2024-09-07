@@ -3,30 +3,54 @@ title:
   en: Icon design
   it: Icone
 description:  
-  en: Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism.
-  it: Diversi progetti di icone, per lo più basati sull'estetica di macOS, e sulla nuova ondata di scheumorfismo
+  en: &descen Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism.
+  it: &descit Diversi progetti di icone, per lo più basati sull'estetica di macOS, e sulla nuova ondata di scheumorfismo
+projectdescription:
+  en: *descen
+  it: *descit
 imgs:
 - url: 1
   size: full
+  aspect: 1/1
   alt:
+    en: A set of icons looking like the first iBook, in blueberry, tangerine, and lime
+    it: Un set di icone che ricordano il primo iBook, in blu, arancione e verde
 - url: 0
   size:
+  aspect: 1/1
   alt:
-- url: 2
-  size:
-  alt:
+    en: An icon with three baloons coming out of it, in the style of macOS' Big Sur
+    it: Un'icona con tre palloncini che fuoriescono, nello stile di macOS Big Sur
 - url: 3
-  size:
-  alt:
-- url: 4
   size: 
+  aspect: 1/1
   alt:
+    en: An icon with a synthwave sunset, a palm, and birds, for a music radio app
+    it: Un'icona con un tramonto synthwave, una palma e gabbiani, per un'app radio
+- url: 2
+  size: full
+  aspect: 1/1
+  alt:
+    en: An icon replacement for the Terminal app, in a glowy and shiny style, inspired by the mechanical keyboard community
+    it: Un'icona per l'applicazione Terminale, in uno stile luminoso e brillante, ispirato alle tastiere meccaniche moderne
+- url: 4
+  size: hero
+  aspect: 1/1
+  alt:
+    en: an icon looking like a gamecube, in the style of macOS' Big Sur, with a gamepad
+    it: Un'icona che ricorda un gamecube, nello stile di macOS Big Sur, con un gamepad
 - url: 5
   size: 
+  aspect: 1/1
   alt:
+    en: A happy pizza box icon, for a food delivery app
+    it: Un'icona di una scatola di pizza felice, per un'app di consegna di cibo
 - url: 6
   size: 
+  aspect: 1/1
   alt:
+    en: Bluey, form the kid's cartoon, as an icon
+    it: Bluey, dal cartone animato per bambini, come icona
 
 
 tecnologies: 
