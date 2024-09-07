@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "it") {
               window.location.href = "/" + langPrefix + "/projects/icons/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -185,29 +181,44 @@
 
 
 
+    
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 1/1; background-color:rgb(45.6644%,33.7212%,79.5784%)" >
+        <img
+        class="size-full sm:rounded-3xl object-cover"
+        src="/assets/images//projects/icons/4.jpg"
+        alt="Un'icona che ricorda un gamecube, nello stile di macOS Big Sur, con un gamepad"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+EAQEV4aWYAAE1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAKgAgAEAAAAAQAABdygAwAEAAAAAQAABdwAAAAA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8AAEQgABQAFAwEiAAIRAQMRAf/EABUAAQEAAAAAAAAAAAAAAAAAAAAH/8QAHRABAQACAwADAAAAAAAAAAAAAgEDEQAEBhIxMv/EABUBAQEAAAAAAAAAAAAAAAAAAAYJ/8QAHxEBAAICAgIDAAAAAAAAAAAAAQIDETEAITJRgaHB/9oADAMBAAIRAxEAPwCJ+Q830sXRYF1NYb9Kz8szRuSk6BMXwIjUuRS5G0nHHLOXX3RuuI2zButl5L3OyU5PedykuNGgADiuSknC7z8uF+/33z//2Q=='); background-repeat: no-repeat; background-size: cover;"
+        />
+</div>
 
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+
+
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             Icone
         </h1>
-        <div class="text-xl italic">
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
             Diversi progetti di icone, per lo più basati sull'estetica di macOS, e sulla nuova ondata di scheumorfismo
         </div>
     </div>
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(96.9178%,96.2767%,94.406%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/icons/1.jpg"
-        alt=""
+        alt="Un set di icone che ricordano il primo iBook, in blu, arancione e verde"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAdEAACAQQDAAAAAAAAAAAAAAACAwEABBMUBQYS/8QAFAEBAAAAAAAAAAAAAAAAAAAABv/EAB0RAQEAAwACAwAAAAAAAAAAAAECAwQRACExMkH/2gAMAwEAAhEDEQA/ALoL3ln9eJFnbjtIYiHq3Guc1Ay1oSnOTMzh9gTIN5mwckrgoWADClKG7u5s4tvPEZUkyKDMW9oKe1c1T1V9rz4OAHi3V0dV18S4T6/lWADwAKAAAAAD0HPP/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -215,11 +226,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(86.3262%,90.363%,94.3844%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/icons/0.jpg"
-        alt=""
+        alt="Un'icona con tre palloncini che fuoriescono, nello stile di macOS Big Sur"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAeEAACAgIDAQEAAAAAAAAAAAADBAIFAAYBExQHEv/EABQBAQAAAAAAAAAAAAAAAAAAAAb/xAAbEQEBAQEBAQEBAAAAAAAAAAACAwEEBRITI//aAAwDAQACEQMRAD8Atlofmzuw2W4t2m6XtiIe0Mgqx2oln2ayvghX/msE3x54kSCx3sLx8wiQk0buIxOXbyxjE3V7Xp+fd8nJ1uXPL4UwhK2nagXeY7zpT5/RrQNeiY+ZzImCCU5PD8r1IDu7uOduqyoa0LrDFkauE/589JSzclIYkRios2lNVE0v/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -227,23 +241,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(81.7305%,79.3944%,90.6512%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
-        src="/assets/images//projects/icons/2.jpg"
-        alt=""
-        />
-    </div>
-    
-        
-    
-    
-        
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
-        <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/icons/3.jpg"
-        alt=""
+        alt="Un'icona con un tramonto synthwave, una palma e gabbiani, per un'app radio"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAdEAADAAIDAQEAAAAAAAAAAAAEBQYCAwABBxQV/8QAFQEBAQAAAAAAAAAAAAAAAAAABgf/xAAcEQEBAAIDAQEAAAAAAAAAAAACAQMRBBIiBQb/2gAMAwEAAhEDEQA/AK+5Tz+hlKS9paa/ZXU7etwGcTGHKQlIvlq9aB8TRMubC7iDKDQ6YZ/pd7TtQWK7DVpEHH2ZdkllOOOOr9HnZfb5OSrUOzYJrHJjPkQncIO1ras7K1W2xdftv1mSxL7vOl6g+GMZ0AQfOME70ZUtdmtt1O1X/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -251,11 +256,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(50.1836%,44.3814%,63.2193%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
-        src="/assets/images//projects/icons/4.jpg"
-        alt=""
+        class="rounded-3xl object-cover"
+        src="/assets/images//projects/icons/2.jpg"
+        alt="Un'icona per l'applicazione Terminale, in uno stile luminoso e brillante, ispirato alle tastiere meccaniche moderne"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+EAQEV4aWYAAE1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAKgAgAEAAAAAQAABdygAwAEAAAAAQAABdwAAAAA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8AAEQgABQAFAwEiAAIRAQMRAf/EABUAAQEAAAAAAAAAAAAAAAAAAAAH/8QAGxABAAMBAQEBAAAAAAAAAAAABAIDBQEABgf/xAAVAQEBAAAAAAAAAAAAAAAAAAAHCP/EAB0RAQACAgMBAQAAAAAAAAAAAAECEQMEEiEiADH/2gAMAwEAAhEDEQA/AIp9D+ggUqLUfJ5zXs5G9duhIUqK+xMU8KM2nLyMi6k85nuemesvc0L9By7OaFQ+EAV556pY7+5iOENiZEVBqTcnm+pkpPpUto6CgATNPXw4tXBDHDjGOMQ5TlV+nuUlq/wugoAAPv/Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -263,11 +271,17 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    
+    
+        
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(93.5563%,88.0751%,53.6972%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/icons/5.jpg"
-        alt=""
+        alt="Un'icona di una scatola di pizza felice, per un'app di consegna di cibo"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAdEAACAwACAwAAAAAAAAAAAAAEBQIDBgABBxIy/8QAFQEBAQAAAAAAAAAAAAAAAAAABwn/xAAaEQADAQEBAQAAAAAAAAAAAAABAgMREiIE/9oADAMBAAIRAxEAPwCzDHotBnWmzavNo12S/XPa3WbRNQwRAvH6qANAks2luChG84Kwmm0+ZLDuRPdt/dfzD2m445H36IRpejNJOiQPKhBiqFHlOV3ANOax1mJYklfvKdLUZkXeivkCYyeTXynK7yi9NnTsC7lnLMf/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -275,11 +289,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(56.4669%,70.1983%,85.5609%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/icons/6.jpg"
-        alt=""
+        alt="Bluey, dal cartone animato per bambini, come icona"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAcEAACAgIDAAAAAAAAAAAAAAACAwEEAAUGEhP/xAAUAQEAAAAAAAAAAAAAAAAAAAAI/8QAGREAAwEBAQAAAAAAAAAAAAAAAQIDEhEj/9oADAMBAAIRAxEAPwCu3EOS7qtrj9bp2isOZaAmRA+KHNbKKghHZfWouIQDVgqXLBZOA3w1zWMY45O8kVVYkEGhNPVtWJs/Hrtggd2E5hhOU8ykqSREUmVlOlGZkHRxBjzGZASTqzypbKDbkbo+qUZ6MzH/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

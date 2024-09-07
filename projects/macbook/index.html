@@ -8,7 +8,7 @@
 </title>
 <meta
   name="description"
-  content="I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup."
+  content="A personal project inspired by Apple’s 2020 iMac colors, reimagining a vibrant, modern MacBook. Featuring a slim M3 MacBook Air profile and bold duotone colors in five variants, this 3D render brings a fun, colorful twist to the classic design."
 />
 <meta
   property="og:locale"
@@ -71,7 +71,7 @@
 </title>
 <meta
   name="description"
-  content="I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup."
+  content="A personal project inspired by Apple’s 2020 iMac colors, reimagining a vibrant, modern MacBook. Featuring a slim M3 MacBook Air profile and bold duotone colors in five variants, this 3D render brings a fun, colorful twist to the classic design."
 />
 <meta
   property="og:locale"
@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "en") {
               window.location.href = "/" + langPrefix + "/projects/macbook/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,12 +172,15 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 4/3; background-color:rgb(93.0692%,91.1735%,91.6815%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/macbook/0.jpg"
-        alt="A showcase of all the colors of this imaginary Apple laptop"
+        alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAcDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAACAgMBAQAAAAAAAAAAAAADBAIFAAEHBiP/xAAVAQEBAAAAAAAAAAAAAAAAAAADBP/EABsRAQEBAQADAQAAAAAAAAAAAAECAxEEEiET/9oADAMBAAIRAxEAPwC3p/wVg4AAXOi9B+AFwHJX3Yqgz+19EhthktcmGY2WSyGwzNHacJyAMIxiVmwAzGMq8XfbDEzy0qIGqJ+PG32r7QvGl4d4HAAAC3f2srQmqmM8xZkfTOZmBQPZCTtV2qftKqv/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
@@ -198,15 +197,15 @@
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             iMac to go
         </h1>
-        <div class="text-xl italic">
-            I always wanted Apple to release a colorful MacBook Air, as a sort of homage to the original iBook. Well, recently I realized I was capable of making a plausible render of what it would look like. This was an exercise not only modeling (no ready made assets were used) but also understanding a product identity. The aestetic closely follows Apple's current iMac lineup.
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
+            <p>This project started first as a simple idea (or more precisely, a wish) after Apple released the 2020 iMac model, the first Mac to feature bold colors in over two decades. I’ve always been a fan of their industrial design, and I also always wanted to see a modern interpretation of a colorful laptop.</p> <p>The years went by, and Apple never ended up releasing a truly rainbowy series of MacBooks, and my 3D skills condinued to improve, so I decided to take matters into my own hands, and at least create a render of what I imagined it could look like. </p> <p>The result is a laptop which fuses the slim M3 MacBook Air profile, with the 2020 iMac bold duotone color. It comes in five different variants: red, orange, green, blue, and purple. It’s a fun project, and I hope you enjoy it as much as I did creating it.</p>
         </div>
     </div>
     
@@ -215,11 +214,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(98.7486%,96.7326%,97.1156%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/1.jpg"
         alt="red Apple laptop seen from the front"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAACAgMBAQAAAAAAAAAAAAABAgMEAAUSISL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EAB0RAQACAgIDAAAAAAAAAAAAAAECEQMhABIEE6H/2gAMAwEAAhEDEQA/ALv9ZvtlYu7ivYau8dK0sFcpCY34LTEmUmV1duQigokY+SSCW8YxggrEXbcvkk5byQMrQROmJqIRL9WNXrEDbt1tVbVv/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -227,11 +229,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(91.924%,96.4944%,95.0594%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/2.jpg"
-        alt=""
+        alt="a dettail of the right side of a green Apple laptop"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAeEAACAgICAwAAAAAAAAAAAAADBAECAAUGBxIUIf/EABUBAQEAAAAAAAAAAAAAAAAAAAAF/8QAIhEAAgEDAgcAAAAAAAAAAAAAAQIDBBJBADEREyEiMnGh/9oADAMBAAIRAxEAPwC4HZcON2spr9mfdH4+FKzdQKIKCbtazPrwW52GyzF/iooHUK69aTJJmLzePBjGEd7V7m8Qdzke/mwxqNR0FLU0tPUTRXyzRJJI/MlW52ALG1HVBxOFUAYHXX//2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -239,11 +244,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(92.0273%,91.7223%,94.1945%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/3.jpg"
-        alt=""
+        alt="a purple Apple laptop seen from above"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAACAwADAQAAAAAAAAAAAAADBAIFBgAHCBL/xAAVAQEBAAAAAAAAAAAAAAAAAAAFB//EACARAQADAAEDBQAAAAAAAAAAAAECAwQRBQYSABQxMnH/2gAMAwEAAhEDEQA/AK8vTfd9V5XHhF6zr5HUoa6OhSRrYXZMvX5lHHr5kaaNWilV2CY0pr6CC4VFV0F0hVwoCHOJfkLjjll7V7Y6H1ToODfvwmjXo903XOjXWza9miqCxqvhWJXXCKkTy4ZS5lKSr5c1FlFc51jJ8uXykfWbEOCQAAHAfH6+v//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -251,11 +259,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(86.3532%,83.0909%,84.7781%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/5.jpg"
-        alt=""
+        alt="the full lineup of the colorful Apple laptops, seen from the left side, all closed"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAfEAACAgICAwEAAAAAAAAAAAAEBQIDBgcAAQgJEhP/xAAVAQEBAAAAAAAAAAAAAAAAAAAGCP/EACARAAICAgICAwAAAAAAAAAAAAIDAQQFBhITABEHQUL/2gAMAwEAAhEDEQA/AKGt8+wvyA0LunZGFDXYtmqADJGa5BRkOPjAkJA1jNh1CuBSHtbawmQGUAKRaw/aX0rgRR1TMsqMnHHKI+NtU13L6Zib+SxNW5ca7LrbYbDOxgVc3kaiIORMYKV10KXymORQHI5IyIpJbjet0s3CKjzrpnCas/rVxEO63q+Ht2Weoj1zfZe57J/TGEX35//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -263,11 +274,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(98.2708%,95.0692%,92.3831%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/4.jpg"
-        alt=""
+        alt="an orange Apple laptop in a tent position, mimikind an old iBook advertisement"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAbEAACAgMBAAAAAAAAAAAAAAACAwQFAAEGE//EABQBAQAAAAAAAAAAAAAAAAAAAAb/xAAZEQADAQEBAAAAAAAAAAAAAAABAgMEEhH/2gAMAwEAAhEDEQA/ALhLHv7ul7bq609qnV6Uc+yuitEUhXg+C8pQiag9ZDJUkSc1rmbEQ0lKlL0ozcxjBr7NUa6JpoqFXVqIDOaEdaaNyGoWYIpPiJ7xNAJzVZqqhE+eFBF2knRy4/eFEwSMkV6Kz5XpvOnfzqjlqULOzMf/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -275,11 +289,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(5.49496%,7.26433%,6.5306%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/macbook/6.jpg"
-        alt=""
+        alt="a green Apple laptop half closed in the dark"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAhEAACAgEDBQEAAAAAAAAAAAACAwEEAAYHExESFiEjMf/EABUBAQEAAAAAAAAAAAAAAAAAAAMG/8QAIREBAAAEBgMAAAAAAAAAAAAAAQAEETECAzNBQlGh4fD/2gAMAwEAAhEDEQA/AIzbuxu2q61BtfzgGOVM2ObUWnXATIVXOCSK9D1yUH1KOxhvL1E8n71YxguJrfYfA/e2Jhm5mutmWOT0R//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "en") {
               window.location.href = "/" + langPrefix + "/projects/neodentist/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -178,12 +174,15 @@
 
 
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: ; background-color:rgb(13.7144%,17.0367%,25.1725%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/neodentist/1.jpg"
-        alt="logo"
+        alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAADAQEBAAMAAAAAAAAAAAADBAUCAQAGEhP/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EACARAAEEAQQDAAAAAAAAAAAAAAECAwQhEQAxQVEyYXH/2gAMAwEAAhEDEQA/AJKonzRK1LUBMgkjPyhcUuPmu0LA7z++9Jl9ZJjIBwg5D9R6QXK3jZekN++caGALzz1beQkOroeWbvo856HzYVolCkSFRGFKedKi2kklxRJJvk+hWwxgVr//2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
@@ -194,25 +193,28 @@
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             Neon dentist: brand identity and logo
         </h1>
-        <div class="text-xl italic">
-            Made for a local dentist with a passion for the cyberpunk aestetic, and a strong will to differentiate themselves. After discussions, and many iterations, we arrived to the braced smile logo, as they specialize in orthodontics. The single "tooth" element is decoupled from the logo and used for various graphics and icons throughout templates.
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
+            
         </div>
     </div>
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: ; background-color:rgb(22.0384%,18.7236%,30.3844%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/neodentist/0.jpg"
-        alt="showcase"
+        alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAABBQEBAQAAAAAAAAAAAAACAAEDBAUGExX/xAAVAQEBAAAAAAAAAAAAAAAAAAAFB//EAB4RAQEBAQABBQEAAAAAAAAAAAECAxEEABITISIx/9oADAMBAAIRAxEAPwCczK5H79GHcs2c1rOsU+ha9OezbJPat2JZrJe0zvIQnOchgBO7RAQxC7iAoiKsbeZ5Ge2ucXMxnrpET8WTyYtmTrCvADqq/fV69X0wxnS5M55N0HT3PCuHarqv5Oqq/wBVV9f/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -223,11 +225,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: ; background-color:rgb(21.066%,23.145%,30.6068%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/neodentist/2.jpg"
         alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAfEAACAgICAwEAAAAAAAAAAAADBAECAAcFFAgREhP/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EAB8RAQEAAgIBBQAAAAAAAAAAAAECAxEEIUEAEiIjgf/aAAwDAQACEQMRAD8AmK21yjo9X+NT/YMUvIarp+gGCkYTXhVyghykqW1hqkNFps6QXz2yVGS9azSPbGMqszL7vjJ9mQ1MknWSg6kDwb67drtVSnF5XIycbBd5slU4oGqpVJCTb51IH56//9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -235,11 +240,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: ; background-color:rgb(12.6459%,14.8011%,23.9341%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/neodentist/3.jpg"
         alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAeEAACAgICAwAAAAAAAAAAAAACBAEDABMFEQYSJP/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAIBEAAQMEAgMAAAAAAAAAAAAAAQIDBAARITFBUmFx8P/aAAwDAQACEQMRAD8Ako4LyRp/jqChVJQ6gELLFobmxooGB2syy2wGzsJL5616/ayydfUjAsYysSDZ5wADY4HUeKKQ5UhcVhSnllRbSSb7OM49D69f/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -247,11 +255,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: ; background-color:rgb(26.9955%,27.754%,36.6783%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/neodentist/4.jpg"
         alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAeEAABBAMAAwAAAAAAAAAAAAAFAQMEBgACBwgTFP/EABUBAQEAAAAAAAAAAAAAAAAAAAYH/8QAHhEBAAICAgMBAAAAAAAAAAAAAQIDESEEMQASMlH/2gAMAwEAAhEDEQA/AJ1e7pz0Bxbw9P0mjSa5Z71xkjYOkEZVkQyPs1hi24kEjFRoxQY+RX12jDHN5sXcqYYfckNrG1g+h362MZWeXGNfIsjCMSJ6Sx6jucITk5kLuSveujBrw3XyuQ11LbNWutVcvxB7c/hg6Awa15//2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

@@ -8,7 +8,7 @@
 </title>
 <meta
   name="description"
-  content="A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos."
+  content="The Memory Machine, a wooden instant camera with a color e-ink display. A camera that makes you think about the permanence of a photo."
 />
 <meta
   property="og:locale"
@@ -71,7 +71,7 @@
 </title>
 <meta
   name="description"
-  content="A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos."
+  content="The Memory Machine, a wooden instant camera with a color e-ink display. A camera that makes you think about the permanence of a photo."
 />
 <meta
   property="og:locale"
@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "en") {
               window.location.href = "/" + langPrefix + "/projects/mmachine/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,12 +172,15 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 3/4; background-color:rgb(54.87%,50.3529%,48.2883%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/0.jpg"
-        alt=""
+        alt="The Memory Machine in pink, on a stack of other Memory Machines"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAACAgMBAQEAAAAAAAAAAAAEBQMGAAEHAgkU/8QAFAEBAAAAAAAAAAAAAAAAAAAABv/EAB4RAQEBAAICAwEAAAAAAAAAAAECAwQRBTESISJB/9oADAMBAAIRAxEAPwCWOx/SJrzfrlnXb5Eqs6uwIKRbFKptbiRQad4aJZAzEVf8qq6ERIsnLV+3E0zkhozkZMTd7O0J+UUZjGDfH+R5mnEzu9m7qtmqqMlV30/rHo9AfUgTIAA85PifH3s1XGO/jkfnTWDqMs5n8xpM+ont67pGqWlX/9k='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
@@ -196,15 +195,15 @@
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             The Memory Machine
         </h1>
-        <div class="text-xl italic">
-            A instant camera project for the current age, modelled in Blender. It has a color e-ink display hidden behind two wooden doors, and no solid state memory. It can only take (and display) a single picture at a time. When a new one is taken, the previous one is erased. It doubles as a picture frame. <br> I designed it as a reflection on permanence and commodification of photos.
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
+            <p>This projects starts way back in Univerity. During the "product design" course, we were asked to choose an object, without really any guidance in particular. I chose an old film camera, as I was really starting to appreciate photography, and what it meant to capture a moment, in those years.</p> <p>The first half of the course was dedicated to the study of the object, how it relates to our perception, how it works, and how to operate it. Pretty ordinary stuff.</p> <p>Right after that, we were asked to design a brand new product which somehow transformed the old object. Firstly I thought of a digital camera that felt like an old film camera, with mechanical controls, and maybe film themed memory cards, but that felt a bit too… Safe?</p> <p>Back to the drawing board. I started thinking about what it means to take a photo. I started thinking about my photo library with 20k+ photos, a good part of it I didn’t really felt attached to. Beside a newfound decluttering urge, I started pondering about how photos are now a commodity, and how they are stored in the cloud, and how they are shared, and how they are forgotten.</p> <p>I wanted to make something to subvert this whole idea. A camera that could only take one photo at a time, and that would erase the previous one when a new one was taken. No storage, no live view, no memory card, just a color e-ink screen that can hold a picture indefinitely.</p> <p>And so, the Memory Machine was born. A camera that would make you think about the permanence of a photo, and how it’s not just a file in a folder, but a moment in time, that you can hold in your hands.</p> <p>Inspired both by old instant cameras, and by the wooden picture frames that my grandma used to have in her house, I wanted the Memory Machine to be as much a camera as a piece of furniture, looking right at home in a living room, or in a studio.</p> <p>During the coruse, the camera was designed on paper, refined in Illustrator, and mocked up with cardboard and tape. I even did a rough render in Cinema4D, but due to time and technical constraints, it never managed to look as good as it deserved. So, years later, I decided to model it all again, in Blender this time, and give the attention it needed.</p>
         </div>
     </div>
     
@@ -213,11 +212,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(46.7737%,38.7422%,41.4104%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/1.jpg"
-        alt=""
+        alt="A dettail of the retractile lens system of the Memory Machine"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAACAgMBAQEAAAAAAAAAAAAEBQYHAAIDCAkT/8QAFQEBAQAAAAAAAAAAAAAAAAAABAb/xAAeEQEAAgIDAAMAAAAAAAAAAAABAhEDBAUhMQAiUf/aAAwDAQACEQMRAD8Ajz9CvRt/v/RFn6LrmsuJpYdbVhVvG4rFppI4/G1SCHBw38SeICBmo6FPHbVq5bvmzQlh2I2KBXA6LligMXGMZP7mxmNrOEijIh9INBVHcfDw/Do6+K5/lOQw8zyOPHubEYQ2ZEYmSSREGi7QL6PIlRiAAf/Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -225,11 +227,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(32.9465%,25.3584%,21.6731%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/4.jpg"
-        alt=""
+        alt="The Memory Machine in blue and pink, on a wooden table"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAaEAADAQEBAQAAAAAAAAAAAAADBAUCAAYI/8QAFQEBAQAAAAAAAAAAAAAAAAAABgf/xAAfEQEAAQQBBQAAAAAAAAAAAAABAgMEESExABMjQXH/2gAMAwEAAhEDEQA/AJ8fA/Sfog+RnSc+flDfnnaK9eUboIO3BtDVDPA+gkUEUGYqiOU0yTJqJWAk1uhptjOT85zglW2odyXjDY6ZG0Fefbv71Ube5rtGC1JKirLEnLJXaLgeDiIEYgAH/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -237,11 +242,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(64.9144%,56.1994%,47.9571%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/2.jpg"
-        alt=""
+        alt="a dettail of the materials and finishing of the Memory Machine"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAeEAACAgICAwAAAAAAAAAAAAAEBQIDAQYACAcUFf/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAIBEBAAICAgEFAAAAAAAAAAAAAQIEAxEFBgAHEhMhQf/aAAwDAQACEQMRAD8AqvsB1ZQbN5ELLIORM3kRM3N9g2/U79jZs/oNGrAcWiYGz63WvXLbiDfVCzAyOJGXWRsrnO3NrjjkLS4etkrk52uclOWWxuT2TsW1LOQF1yht1E2v3J2yVVQLvqL3ONhI85lifFWfbGpx8YjKthk6jGoBuTvQAfh5/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -249,11 +257,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(45.4116%,40.9611%,37.6749%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/3.jpg"
-        alt=""
+        alt="the Memory Machine in frame mode, showing a picture on a shelf"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAADAAIDAQEAAAAAAAAAAAADBAUBAgAGBwgU/8QAFAEBAAAAAAAAAAAAAAAAAAAABv/EAB8RAQEBAAIABwAAAAAAAAAAAAECEQMhABIxMkFhcf/aAAwDAQACEQMRAD8AmnQ+7PZ6FOk7bkea9j2bcywkC11V/wDLCWyuuAk6OCN2CNoFUzYGKBcs4aLkzeRaEGEA9cuOOD/1qn5q6q6fTurtqqejtV6O/C4xB8sT9RE8cmYGRxkwe03JNdXVV//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     
@@ -261,11 +272,14 @@
     
     
         
-    <div class=" col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-3  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(34.2622%,27.0562%,26.9367%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/mmachine/5.jpg"
-        alt=""
+        alt="dettail of the color e-ink display of the Memory Machine"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAfEAACAgIBBQAAAAAAAAAAAAADBAECAAURBgcSFCH/xAAVAQEBAAAAAAAAAAAAAAAAAAAGB//EACERAQABAgUFAAAAAAAAAAAAAAECBAUAAxExURIhQULB/9oADAMBAAIRAxEAPwCKHZ/r6my05InSjVlNHUrl9ZlYNWmOdiRh40j1dDkZaJfzNdo7ROYiKlivzGMYBuk5NWKmrSW5exu26kV25+abYrtHGLTwWMV6s31PGbM4x//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

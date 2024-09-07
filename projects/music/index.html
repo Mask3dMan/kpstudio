@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "en") {
               window.location.href = "/" + langPrefix + "/projects/music/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,26 +172,29 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 1/1; background-color:rgb(89.9414%,82.5538%,87.4511%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/music/0.jpg"
         alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAbEAACAwEBAQAAAAAAAAAAAAACAwEEEgAFBv/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHxEAAgICAgMBAAAAAAAAAAAAAQIDBAUREhMAISIx/9oADAMBAAIRAxEAPwCsRw/NlATZ8S5ZAcJrAXrJiUrCrVYeiLyGQw2uawyIQVERgMTnUuc6hesPnVrJqOqEaTL5VF9RIN8UuKOR/WbXJ2JdiWYkrZ7J3aWWt1q0wjhjMJROqGQ7krwyuzPJG8js8jM7s7MzMzEkknz/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             Music production
         </h1>
-        <div class="text-xl italic">
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
             Simple illustrations to showcase the gear I use for my music making hobby.
         </div>
     </div>
@@ -205,11 +204,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(92.5317%,90.9787%,89.4569%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/music/1.jpg"
         alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAADAAIDAQAAAAAAAAAAAAABAgMAEQQFBhP/xAAVAQEBAAAAAAAAAAAAAAAAAAAFB//EACIRAQAABAYDAQAAAAAAAAAAAAECBAUxAAMGESFRM3Ghwf/aAAwDAQACEQMRAD8Atk87Mr23ppB3YS5kAHfT0YUfmVP0fQLlS5VC22WYSeyEGMYyF6zjiK/m83pmnoncFWLT1KiVU3d3l9veEIfHL25lJNsXZXJX7+9uP//Z'); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

@@ -1,4 +1,4 @@
-let a = 16 // max rotation degrees
+const a = 16 // max rotation degrees
 let random
 const inv = -1
 let inscroll = false

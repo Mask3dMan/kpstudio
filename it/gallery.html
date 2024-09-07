@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "it") {
               window.location.href = "/" + langPrefix + "/gallery";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -191,8 +187,8 @@
     >
       <a href="/it/projects/mmachine">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/mmachine/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(54.7098%,50.2479%,48.0985%); background-image: url(/assets/images/projects/mmachine/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAcEAACAgMBAQAAAAAAAAAAAAAEBQMGAAEHAgn/xAAUAQEAAAAAAAAAAAAAAAAAAAAG/8QAHhEBAQACAgIDAAAAAAAAAAAAAQIDEQQFEiIhMUH/2gAMAwEAAhEDEQA/AJT7L9ImvN+uWZbvkKmzq39fpFrUq21uKEBp3hmmkCMRV/wprwU8iyctX7cTTOSGjORkxN3s7QmhRRmMYP6/subfExXedqqctVVRjVXNkf2PgPoDRIEyEgDzk9T115qquMb8cR65M0GoxRM+sZJkdSbdbpPKlpV//9k="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -233,8 +229,8 @@
     >
       <a href="/it/projects/macbook">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/macbook/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(94.4996%,92.2838%,92.4824%); background-image: url(/assets/images/projects/macbook/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAACAgMBAQAAAAAAAAAAAAABAgMEAAUSBhf/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//EAB4RAQEAAgICAwAAAAAAAAAAAAECAxEAIQQxMlFS/9oADAMBAAIRAxEAPwC4e343aWZjL9C9zWbhFaOlf1sFclECl1hbVShHcgvJywQux5RECorGMrh8jLhxRjhkiJCSseO3Xvu7irrv9U/XriunJTd6aSRSZPjJJ1IG9SbdbU2q7ef/2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -264,17 +260,17 @@
   </section>
      
   <section
-    id="aillustrations"
+    id="a3D"
     class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
     style="animation-delay: calc(50ms*3); animation-fill-mode: forwards"
   >
     <div
       class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
     >
-      <a href="/it/projects/coffee">
+      <a href="/it/projects/lipstick">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/coffee/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(77.0742%,72.3652%,82.3946%); background-image: url(/assets/images/projects/lipstick/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQAAAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/+EAQEV4aWYAAE1NACoAAAAIAAGHaQAEAAAAAQAAABoAAAAAAAKgAgAEAAAAAQAAAyCgAwAEAAAAAQAAAyAAAAAA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8AAEQgABQAFAwEiAAIRAQMRAf/EABUAAQEAAAAAAAAAAAAAAAAAAAAK/8QAHRAAAgIDAAMAAAAAAAAAAAAAAgMEBQABBgcTFP/EABUBAQEAAAAAAAAAAAAAAAAAAAIG/8QAIREBAAEDBAIDAAAAAAAAAAAAAQMCESEABAUxMkNBUVP/2gAMAwEAAhEDEQA/AKFrnx9TQtJPdTyUs2OahgSuXAo62RYNVpjoilWaTR9THGbVMdIEBFK1bH1mTWMZcx8xydMcVNO8lAiit4ProcrSrd7Vb5+3Q5BXeTN/z6x6o/gsXwXe1y51/9k="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -282,7 +278,7 @@
             <h2
               class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
             >
-              Mean cuppa
+              Glitter pastel
             </h2>
           </div>
           <div class="flex size-full items-end sm:hidden">
@@ -296,7 +292,7 @@
           <h2
             class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
           >
-            Mean cuppa
+            Glitter pastel
           </h2>
         </div>
       </a>
@@ -313,8 +309,8 @@
     >
       <a href="/it/projects/fish">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/fish/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(85.2012%,80.9584%,77.0103%); background-image: url(/assets/images/projects/fish/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAADAQACAwAAAAAAAAAAAAADBAUCAAYBBxX/xAAUAQEAAAAAAAAAAAAAAAAAAAAF/8QAHhEAAwADAAMBAQAAAAAAAAAAAQIDBAUSBhEhABP/2gAMAwEAAhEDEQA/AKkOlpykekq6jjsJrl7p7DGdShZ+5jLg7YTNtptUEdU1wOsNEJmaZ5tKcPIlZg1FseR7cccD0VaU0+uq7e3riztRuVHVKg0o3pQFHTszEKAAT8AHz8h5KWxvI9/iwZkhi7va4sJ9M384YufeEJ9OWduJTROnZnf0WdmZmY//2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -353,8 +349,8 @@
     >
       <a href="/it/projects/music">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/music/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(89.7799%,82.4255%,87.2778%); background-image: url(/assets/images/projects/music/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAbEAADAQADAQAAAAAAAAAAAAABAgMEAAUSFv/EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAHhEBAAIDAQADAQAAAAAAAAAAAgEDBAUREhMhIjH/2gAMAwEAAhEDEQA/AKv7fNlUbT0mzTNSsc027eKmEp5MlHDO3UUFHrazuzKkgB5XwSvouOOUKxo/PMrZmIqpjg2+1B+qhHfIzCez/UuemplqZSmZW3+yzcHb5mLi3RVRUqvA+KmyYl0VWNJ2Vuxp2JNtpJJKVMzM9//Z"
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -395,8 +391,8 @@
     >
       <a href="/it/projects/cars">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/cars/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(57.2955%,61.871%,46.9903%); background-image: url(/assets/images/projects/cars/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAACAwACAwAAAAAAAAAAAAAEBQIDBgABBwgT/8QAFQEBAQAAAAAAAAAAAAAAAAAABAj/xAAgEQADAQABAwUAAAAAAAAAAAABAgMEBQYRFAASITFB/9oADAMBAAIRAxEAPwCs/N2dj6+a8hLgwcUszptpIFSYHDr+q+y1PwYlaFmW8N0RTLRvZaWA7c+qa8e6lMtjUDVGvqMXHHJ66TxYuf6d4rluXx5dvI68x8jS+eMmr49aZZFkgkp+5YRkjMEDUKmlC9Gd2VuyxxbtuXIKQzx16RKSXuEQNZ3IUGh7AsSe318n89f/2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -435,8 +431,8 @@
     >
       <a href="/it/projects/egg">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/egg/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(66.3077%,82.4734%,90.7415%); background-image: url(/assets/images/projects/egg/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAADAAICAwAAAAAAAAAAAAACAwQAAQUGBxMj/8QAFAEBAAAAAAAAAAAAAAAAAAAACP/EABwRAQEAAwEBAQEAAAAAAAAAAAIDAQQSEQUTI//aAAwDAQACEQMRAD8Av53byByNHPUzKlSlcQTj7CfQ6l7nTJKgmHs1zhPpo7OVCZVsRprQfTX8iUxjHD8j5mlP58TiSWP02l7W+xZ+vbu84/S1aPg5WTMdcSngykRIAEE7u/t12rN1xhdYHkpyiPJETP8AOInPrJmct891fVKJ0ba//9k="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -466,17 +462,17 @@
   </section>
      
   <section
-    id="a3D"
+    id="aillustrations"
     class="group row-span-3 my-auto mb-10 animate-fadeIn opacity-0 sm:m-5 sm:aspect-square lg:m-3 xl:m-4"
     style="animation-delay: calc(50ms*8); animation-fill-mode: forwards"
   >
     <div
       class="bg-secondary rounded-3xl shadow-lg shadow-primary/30 transition-all sm:bg-transparent sm:hover:rotate-3 sm:hover:scale-125 sm:hover:bg-secondary"
     >
-      <a href="/it/projects/lipstick">
+      <a href="/it/projects/coffee">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/lipstick/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(95.1947%,85.0079%,75.7735%); background-image: url(/assets/images/projects/coffee/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAfEAACAgEEAwAAAAAAAAAAAAABAgMEAAUGERMUFSP/xAAUAQEAAAAAAAAAAAAAAAAAAAAI/8QAHBEBAAMBAQEBAQAAAAAAAAAAAQIDESEEEjJB/9oADAMBAAIRAxEAPwCtqpuK/uG7rEVlykeiX/V1AGDN44rxWuGZVjLfWxIV7Ox1UhOwoqIjGMIvr9fpu9Fltl9kpz+GUt+dSEDcjkT8m4GvXq6mPPVXXTCMYhEZJuydZsnslXr/AF5wMAD/2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -484,7 +480,7 @@
             <h2
               class="mb-4 ml-4 hidden overflow-hidden pt-4 font-sans text-3xl italic text-transparent transition-all sm:block sm:group-hover:text-secondary"
             >
-              Pastel glitter
+              Mean cuppa
             </h2>
           </div>
           <div class="flex size-full items-end sm:hidden">
@@ -498,7 +494,7 @@
           <h2
             class="text-primary mx-6 mb-5 mt-3 text-4xl lowercase italic leading-9 sm:hidden sm:text-secondary"
           >
-            Pastel glitter
+            Mean cuppa
           </h2>
         </div>
       </a>
@@ -515,8 +511,8 @@
     >
       <a href="/it/projects/neodentist">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/neodentist/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(22.3944%,18.3128%,30.6544%); background-image: url(/assets/images/projects/neodentist/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAcEAACAgMBAQAAAAAAAAAAAAACAwQFAAEGEhT/xAAVAQEBAAAAAAAAAAAAAAAAAAAFB//EAB4RAAMAAgMAAwAAAAAAAAAAAAECAwQRAAUSEyFB/9oADAMBAAIRAxEAPwCdCg42w7OG21sOpsl2Lpj5NjK0spZWU6UKyfPf90uQepTdKAXt9kx/gNtM/AaFjGUjse57PDzsrFxsppwx7PKM/ji/iaHSr6pN3bQAG2Zif0nZ4najxtaUyFnKtEQFVYhUchQWcMzaAH2zEnWySef/2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -559,8 +555,8 @@
     >
       <a href="/it/projects/icons">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/icons/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(64.2391%,71.7476%,87.6906%); background-image: url(/assets/images/projects/icons/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAbEAACAgMBAAAAAAAAAAAAAAADBAIFAAEGFP/EABUBAQEAAAAAAAAAAAAAAAAAAAcI/8QAHREAAgICAwEAAAAAAAAAAAAAAQIDEQQFABIxIf/aAAwDAQACEQMRAD8AsxX9HfPU1HHmzo08lquA7Ul4o50k7B2bbhBnS8lpzcKtQSuwg0kSFkaRoFY2/oRRKLMYyxyrI0irPmUssoHbNzHNCVqtnnZjVD0n4K84FbbW61tjlsdbrgWkDkLg4qL2ZEY9USFUUX4qqFHgAHzn/9k="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -599,8 +595,8 @@
     >
       <a href="/it/projects/cmdz">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/cmdz/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(97.0636%,92.27%,95.936%); background-image: url(/assets/images/projects/cmdz/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAr/xAAbEAADAQEBAQEAAAAAAAAAAAACAwQBABEFE//EABUBAQEAAAAAAAAAAAAAAAAAAAUG/8QAGxEBAAICAwAAAAAAAAAAAAAAAQDwEUEhMbH/2gAMAwEAAhEDEQA/ALkpFUro+gdFh1KdSBSo1S1DCkZkiU6zDNJoGzCeRt9Z+rWeFi9WtbnOYDHVu5YIGA4APCruf//Z"
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"
@@ -639,8 +635,8 @@
     >
       <a href="/it/projects/casio">
         <div
-          class="block aspect-square rounded-t-3xl bg-primary bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
-          style="background-image: url(/assets/images/projects/casio/thumb.jpg)"
+          class="block aspect-square rounded-t-3xl bg-cover transition-all sm:rounded-3xl sm:group-hover:-rotate-3 sm:group-hover:scale-90 sm:group-hover:shadow-lg"
+          style="background-color: rgb(97.2512%,64.6503%,80.6835%); background-image: url(/assets/images/projects/casio/thumb.jpg), url(data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAADAQACAwEAAAAAAAAAAAABAgMEABIFETIx/8QAFQEBAQAAAAAAAAAAAAAAAAAABgn/xAAaEQACAwEBAAAAAAAAAAAAAAABAgARIRIi/9oADAMBAAIRAxEAPwC/uzRLRn8fKWWWZ8uZ5WtMkvsdr0cWt+AMqkIPo+h9deqq444wlRkUIOVGWzaSxt2LtrEmuiaF0o8qAuT/2Q=="
         >
           <div
             class="flex items-end rounded-3xl transition-all sm:h-full sm:bg-transparent sm:group-hover:bg-primary/30"

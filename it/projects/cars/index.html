@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "it") {
               window.location.href = "/" + langPrefix + "/projects/cars/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,26 +172,29 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 1/1; background-color:rgb(57.3178%,61.9041%,47%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/cars/0.jpg"
-        alt="A stylized and beaten up Fiat panda, lo poli and pixelated 3d graphics"
+        alt="Una Fiat Panda stilizzata e malconcia, grafica 3d low poly e pixelata"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAACAwADAQEAAAAAAAAAAAAEBQIDBgABFAcI/8QAFQEBAQAAAAAAAAAAAAAAAAAABAj/xAAgEQADAQABAwUAAAAAAAAAAAABAgMEBQAGERIUITFB/9oADAMBAAIRAxEAPwCs/t2dj+fNdelwYOKWZ024oCpMDh1/VfrUedkVoWZbw3RFMtG9lpoDtz6prx7qUy2NQNUa+owcccnntLFj5/t3iuW5fHl28jrzsNGp88ZNX29q5ZFkgkp+pYQkjMEDUKmlC9Gd2VuyxxbtuXIKQzx16RKSXuEQNZ3IUGh8AsSfH18n86//2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             Tiny cars
         </h1>
-        <div class="text-xl italic">
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
             Illustrazione fatte completamente in Blender, senza risorse esterne o tool aggiuntivi. Un'esplorazione di modellazione lowpoly, e utilizzo di shader non convenzionali.
         </div>
     </div>
@@ -205,11 +204,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(46.7347%,46.5697%,61.581%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/cars/1.jpg"
-        alt="A city car encountering a glowing rock at night"
+        alt="Una city car che incontra una roccia luminosa di notte, grafica 3d low poly e pixelata"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAj/xAAdEAACAgIDAQAAAAAAAAAAAAAEBQMGAgcAARII/8QAFQEBAQAAAAAAAAAAAAAAAAAABgj/xAAcEQEBAAMAAwEAAAAAAAAAAAABAgMEEQAhMUL/2gAMAwEAAhEDEQA/AJ5+4dM6erlkplT1rQV+vkSEFr6zAmxaWB9OxErZuU1jfHC9SsY1uWWYaIaMUSBYuy7g8kkSEGEOOOUrsZM2GsUY9jaJdTRyvdrYtcmfS1s+Wmry1S3lurevBeATw8JVubI8MqEkyBMfJmQ/Pt5J1etPWlVX/9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

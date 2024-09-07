@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "it") {
               window.location.href = "/" + langPrefix + "/projects/casio/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,26 +172,29 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 1/1; background-color:rgb(97.25%,64.6514%,80.6791%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/casio/0.jpg"
-        alt="A minimal illustration of the G-Shock GA2100"
+        alt="Un'illustrazione minimalista del G-Shock GA2100"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAADAQACAwEAAAAAAAAAAAABAgMEABIFETIx/8QAFQEBAQAAAAAAAAAAAAAAAAAABgn/xAAaEQACAwEBAAAAAAAAAAAAAAABAgARIRIi/9oADAMBAAIRAxEAPwC/uzRLRn8fKWWWZ8uZ5WtMkvsdr0cWt+AMqkIPo+h9deqq444wlRkUIOVGWzaSxt2LtrEmuiaF0o8qAuT/2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
 
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             Orologi Casio Minimali
         </h1>
-        <div class="text-xl italic">
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
             Una composiozione grafica minimalista, per ciò che può essere considerato un orologio massimalista: il G-Shock
         </div>
     </div>
@@ -205,11 +204,14 @@
     
     
         
-    <div class=" col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn">
+    <div class="w-full  col-span-full  shadow-lg shadow-primary/20 rounded-3xl animate-fadeIn bg-primary"
+    style="aspect-ratio: 1/1; background-color:rgb(22.6992%,57.4209%,86.284%)">
+  
         <img
-        class="size-full rounded-3xl object-cover"
+        class="rounded-3xl object-cover"
         src="/assets/images//projects/casio/1.jpg"
-        alt="A minimal illustration of the Casio"
+        alt="Un'illustrazione minimalista di un Casio"
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAeEAABBAIDAQAAAAAAAAAAAAACAAEDBgQRBzEyEv/EABQBAQAAAAAAAAAAAAAAAAAAAAn/xAAdEQABBAIDAAAAAAAAAAAAAAABAAMEEUFEUVNh/9oADAMBAAIRAxEAPwCTvBMdb4rEQGNxpWa7mHo2a52mDRb73JBLkb7+8mQfIiiImxjGmqHbIPOw4c+gIb1//9k='); background-repeat: no-repeat; background-size: cover;"
         />
     </div>
     

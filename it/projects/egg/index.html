@@ -8,7 +8,7 @@
 </title>
 <meta
   name="description"
-  content=""
+  content="Una pianta con un uovo fritto al posto del fiore. Nata dal gioco di parole tra "egg" (uovo) e "eggplant" (melanzana)."
 />
 <meta
   property="og:locale"
@@ -71,7 +71,7 @@
 </title>
 <meta
   name="description"
-  content=""
+  content="Una pianta con un uovo fritto al posto del fiore. Nata dal gioco di parole tra "egg" (uovo) e "eggplant" (melanzana)."
 />
 <meta
   property="og:locale"
@@ -104,16 +104,12 @@
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", function() {
         const supportedLanguages = ["en","it"];
-        // Check if a language preference is already stored
         if (!localStorage.getItem('preferredLang')) {
           const userLang = navigator.language || navigator.userLanguage;
-          // Check if the detected language is supported
           const langPrefix = userLang.split('-')[0];
-          if (supportedLanguages.includes(langPrefix)) {
-            // Redirect to the corresponding language version if it's not the default
-            if (langPrefix !== "en") {
+          // Check if the detected language is supported
+          if (supportedLanguages.includes(langPrefix) && langPrefix !== "it") {
               window.location.href = "/" + langPrefix + "/projects/egg/";
-            }
           }
         } else {
           const preferredLang = localStorage.getItem('preferredLang');
@@ -176,25 +172,28 @@
       >
         
 
+
     
-<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn">
+<div class="col-span-ful mb-10 shadow-lg sm:rounded-3xl shadow-primary/20 animate-fadeIn w-full"
+     style="aspect-ratio: 1/1; background-color:rgb(66.4514%,82.5664%,90.8598%)" >
         <img
         class="size-full sm:rounded-3xl object-cover"
         src="/assets/images//projects/egg/0.jpg"
-        alt="A plant with a fried egg instead of the flower"
+        alt=""
+        style="background-image: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wAARCAAFAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAdEAADAAICAwAAAAAAAAAAAAACAwQAAQUGBxMj/8QAFAEBAAAAAAAAAAAAAAAAAAAACP/EAB0RAQEAAwEBAAMAAAAAAAAAAAIDAQQSBRETIiP/2gAMAwEAAhEDEQA/AL/d38g8jRz9Uy5EpXECB9m30Npe506SoJh7IJwn00dnJOmVbJxYwHU2fIlMYxxeR5ukPPicSS/ptL7W+xZ/vtXecd2q3wcrmc+uIzwJSIkACBN/0dyu3Zq2Dnoj5KUYj5ICZz+OM5jrJmct891fVap0ba//2Q=='); background-repeat: no-repeat; background-size: cover;"
         />
 </div>
 
 
-<div class="grid grid-cols-6 gap-6 mx-8 sm:mx-0">
+<div class="grid grid-cols-6 gap-6 sm:gap-8 mx-8 sm:mx-0">
     
     <div class="col-span-full animate-fadeIn opacity-0" style="animation-delay: 100ms; animation-fill-mode: forwards;">
 
-        <h1 class="mb-3 font-serif text-3xl">
+        <h1 class="mb-3 font-serif text-3xl text-balance">
             
         </h1>
-        <div class="text-xl italic">
-            
+        <div class="text-xl italic text-pretty [&>p]:mb-3">
+            Una pianta con un uovo fritto al posto del fiore. Nata dal gioco di parole tra "egg" (uovo) e "eggplant" (melanzana).
         </div>
     </div>
     
@@ -202,12 +201,6 @@
         
     
     <ul class="col-span-full my-10 flex flex-wrap sm:mx-0">
-    
-    <li
-      class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
-    >
-      <a>photoshop</a>
-    </li>
     
     <li
       class="mb-4 mr-6 inline rounded-xl bg-primary px-3 py-2 text-xl text-background shadow-md shadow-primary/20 dark:text-background-dark"
