@@ -29,6 +29,7 @@ exclude:
   - tailwind.config.js
   - node_modules
   - Gemfile
+  - utilities
 
 # portfolio generator
 portfolio_dir: "projects"

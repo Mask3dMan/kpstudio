@@ -15,11 +15,11 @@ projectdescription:
 imgs:
 - url: 0
   size: hero
-  aspect: 4/3
+  aspect: 1/1
   alt: A showcase of all the colors of this imaginary Apple laptop
 - url: 1
   size: full
-  aspect: 1/1
+  aspect: 4/3
   alt: 
     en: red Apple laptop seen from the front
     it: portatile Apple rosso visto di fronte
