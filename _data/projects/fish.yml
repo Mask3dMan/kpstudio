@@ -3,7 +3,7 @@ title:
   en: Rustling pages brand identity
   it: Pagine fruscianti
 description: 
-  en: &descen 'Logo, brand identity and social templates for an educational Instagram creator catering new music producers and audio enthusiasts. It is a fresh take on 70s music poster and magazines aestetic, keeping a paper like texture and feel, while incorporating fresh and modern elements. The logo is rooted in what a sound essentialy is: a wave.'
+  en: &descen 'Logo, brand identity and social templates for an educational Instagram creator catering new music producers and audio enthusiasts. It is a fresh take on 70s music poster and magazines aesthetic, keeping a paper like texture and feel, while incorporating fresh and modern elements. The logo is rooted in what a sound essentially is: a wave.'
   it: &descit 'Logo, brand identity e template per social per un creatore Instagram educativo che si rivolge a nuovi produttori musicali e appassionati di audio. Si tratta di una rivisitazione fresca dell’estetica dei poster e delle riviste musicali degli anni ’70, mantenendo una texture e una sensazione simili alla carta, mentre incorpora elementi freschi e moderni. Il logo è radicato in ciò che è essenzialmente un suono: un’onda.'
 projectdescription:
   en: *descen
@@ -23,7 +23,7 @@ imgs:
     en: showcase of the brand identity, with various instagram templates, mockups and icons
     it: showcase della brand identity, con vari template per instagram, mockup e icone
 
-tecnologies: 
+technologies: 
 - indesign
 - illustrator
 - figma

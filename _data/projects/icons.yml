@@ -3,7 +3,7 @@ title:
   en: Icon design
   it: Icone
 description:  
-  en: &descen Various icon designs, mostly based on macOS' aestetic, and the new wave of skeumorphism.
+  en: &descen Various icon designs, mostly based on macOS' aesthetic, and the new wave of skeumorphism.
   it: &descit Diversi progetti di icone, per lo più basati sull'estetica di macOS, e sulla nuova ondata di scheumorfismo
 projectdescription:
   en: *descen
@@ -19,7 +19,7 @@ imgs:
   size:
   aspect: 1/1
   alt:
-    en: An icon with three baloons coming out of it, in the style of macOS' Big Sur
+    en: An icon with three balloons coming out of it, in the style of macOS' Big Sur
     it: Un'icona con tre palloncini che fuoriescono, nello stile di macOS Big Sur
 - url: 3
   size: 
@@ -53,7 +53,7 @@ imgs:
     it: Bluey, dal cartone animato per bambini, come icona
 
 
-tecnologies: 
+technologies: 
 - sketch.app
 - figma
 - illustrator

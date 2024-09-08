@@ -4,7 +4,7 @@ title:
   it:
 description: 
   en: &descen Simple illustrations to showcase the gear I use for my music making hobby.
-  it: &descit Semplici illustrazioni, create come showcase dell'atrezzatura che utilizzo nel mio hobby di fare musica.
+  it: &descit Semplici illustrazioni, create come showcase dell'attrezzatura che utilizzo nel mio hobby di fare musica.
 projectdescription:
   en: *descen
   it: *descit
@@ -17,7 +17,7 @@ imgs:
   size: full
   alt:
   aspect: 1/1
-tecnologies: 
+technologies: 
 - illustrator
 - photoshop
 

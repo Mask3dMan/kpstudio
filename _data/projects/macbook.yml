@@ -7,7 +7,7 @@ description:
   it: Un progetto personale ispirato ai colori dell’iMac del 2020 di Apple, che reimmagina un MacBook sgargiante e moderno. Caratterizzato dal profilo sottile del MacBook Air M3 e colori audaci in duotono in cinque varianti, questo render 3D porta un tocco divertente e colorato al design classico.
 projectdescription: 
   en: '<p>This project started first as a simple idea (or more precisely, a wish) after Apple released the 2020 iMac model, the first Mac to feature bold colors in over two decades. I’ve always been a fan of their industrial design, and I also always wanted to see a modern interpretation of a colorful laptop.</p>
-  <p>The years went by, and Apple never ended up releasing a truly rainbowy series of MacBooks, and my 3D skills condinued to improve, so I decided to take matters into my own hands, and at least create a render of what I imagined it could look like. </p>
+  <p>The years went by, and Apple never ended up releasing a truly rainbowy series of MacBooks, and my 3D skills continued to improve, so I decided to take matters into my own hands, and at least create a render of what I imagined it could look like. </p>
   <p>The result is a laptop which fuses the slim M3 MacBook Air profile, with the 2020 iMac bold duotone color. It comes in five different variants: red, orange, green, blue, and purple. It’s a fun project, and I hope you enjoy it as much as I did creating it.</p>'
   it: '<p>Questo progetto è nato prima di tutto come un’idea semplice (o più precisamente, un desiderio) dopo che Apple ha rilasciato l’iMac del 2020, il primo Mac a presentare colori audaci da oltre due decadi. Sono sempre stato un fan del loro design industriale, e ho sempre voluto vedere un’interpretazione moderna di un portatile colorato.</p> 
   <p>Gli anni passano, e Apple non ha (tuttora) rilasciato una serie di MacBooks veramente arcobaleno. A questo punto le mie abilità nella modellazione 3D sono cresciute al punto di decidere di prendere io in mano la situazione, e almeno un render di come potesse apparire un tale laptop.</p> 
@@ -27,7 +27,7 @@ imgs:
   size: 
   aspect: 1/1
   alt:
-    en: a dettail of the right side of a green Apple laptop
+    en: a detail of the right side of a green Apple laptop
     it: dettaglio del lato destro di un portatile Apple verde
 - url: 3
   size: 
@@ -45,7 +45,7 @@ imgs:
   size: 
   aspect: 1/1
   alt: 
-    en: an orange Apple laptop in a tent position, mimikind an old iBook advertisement
+    en: an orange Apple laptop in a tent position, mimicking an old iBook advertisement
     it: un portatile Apple arancione in posizione a tenda, imitando un vecchio annuncio dell'iBook
 - url: 6
   size: 
@@ -54,7 +54,7 @@ imgs:
     en: a green Apple laptop half closed in the dark
     it: un portatile Apple verde semi chiuso al buio
 
-tecnologies: 
+technologies: 
 - blender
 - illustrator
 

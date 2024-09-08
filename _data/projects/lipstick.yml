@@ -6,13 +6,13 @@ description:
   en: A dynamic project that started with a single pastel glittery lipstick, evolving into a vaporwave-inspired cosmetics collection. Featuring custom branding, retro-style ads, model portraits, and packaging design, this project captures the essence of an alternative beauty brand.
   it: Un progetto dinamico iniziato come semplice modello di un rossetto glitter, evolutosi poi in una collezione di cosmetici ispirata al vaporwave. Con branding personalizzato, annunci in stile retro, ritratti di modelli e design di packaging, questo progetto cattura l’essenza di un brand di bellezza alternativo.
 projectdescription: 
-  en: '<p>This project just kept on growing. It all started from a single glittery lipstick, made as an exploration of product design, and a study in more complex Blender materials. Then, I experimented with the composition, I wanted something more dynamic. Instedad of a static shot on a table, I made it fall from above, but it felt lonely. So I decided to create a small collection of them, with a pastel, vaporwave inspired palette.</p> 
-  <p>Firstly, the lipsticks were "Kernel Panic Studio" branded, but that didn’t feel right. So I created a brand just for this occasion, "Leonie Cosmetics". I wanted this collection to feel like a part of a bigger brand, so I made a logo that would blend sealessly other cosmetics brands.</p> 
+  en: '<p>This project just kept on growing. It all started from a single glittery lipstick, made as an exploration of product design, and a study in more complex Blender materials. Then, I experimented with the composition, I wanted something more dynamic. Instead of a static shot on a table, I made it fall from above, but it felt lonely. So I decided to create a small collection of them, with a pastel, vaporwave inspired palette.</p> 
+  <p>Firstly, the lipsticks were "Kernel Panic Studio" branded, but that didn’t feel right. So I created a brand just for this occasion, "Leonie Cosmetics". I wanted this collection to feel like a part of a bigger brand, so I made a logo that would blend seamlessly other cosmetics brands.</p> 
   <p>To strengthen the art direction and add a retro feel, I made a small ad series for the collection in a Windows 95 style. But It still felt kind of syntetic, what cosmetics brand launches a product without a model shot? So I worked on three portraits that captured the vibe of the collection and integrated them into the ad campaign.</p>
   <p>The final touch was the packaging. I wanted it to feel like a real product, so I designed a box that would look right at home on a Sephora shelf. I’m really happy with the result, and I feel like I learned a lot from this project.</p>'
   it: '<p>Questo progetto è cresciuto in modo inaspettato. Tutto è iniziato da un singolo rossetto glitterato, realizzato come esplorazione del design di prodotto e come studio di materiali più complessi in Blender. Poi, sperimentando con la composizione, ho deciso di utilizzare una ripresa dinamica. Invece di uno scatto statico su un tavolo, ho fatto cadere il rossetto dall’alto. Però in questo modo l’immagine sembrava spoglia. Così ho deciso di creare una piccola collezione, con una palette pastello ispirata al vaporwave.</p>
   <p>Inizialmente, i rossetti erano marchiati "Kernel Panic Studio", ma non mi convinceva. Così ho creato un brand appositamente per l’occasione, "Leonie Cosmetics". Volevo che questa collezione sembrasse parte di un brand più grande, quindi ho realizzato un logo che non stonasse con altri brand di cosmetici.</p>
-  <p>Per rafforzare la direzione artistica e aggiungere un tocco retro, ho realizzato una piccola serie di shot pubblicitari per la collezione, in stile Windows 95. Ma ancora mancava qualcosala, quale brand di cosmetici lancia un prodotto senza degli scatti di modelli? Così ho lavorato su tre ritratti che catturassero l’atmosfera della collezione, e li ho integrati nella campagna pubblicitaria.</p>
+  <p>Per rafforzare la direzione artistica e aggiungere un tocco retro, ho realizzato una piccola serie di shot pubblicitari per la collezione, in stile Windows 95. Ma ancora mancava qualcosa, quale brand di cosmetici lancia un prodotto senza degli scatti di modelli? Così ho lavorato su tre ritratti che catturassero l’atmosfera della collezione, e li ho integrati nella campagna pubblicitaria.</p>
   <p>Il tocco finale è stato il packaging. Volevo che sembrasse un prodotto reale, quindi ho progettato una scatola che sarebbe stata perfetta su uno scaffale Sephora. Sono davvero soddisfatto del risultato, e sento di aver imparato molto da questo progetto.</p>'
 imgs:
 - url: 0
@@ -65,7 +65,7 @@ imgs:
     it: Una pubblicità in stile windows 95 per Leonie Cosmetics, con diversi rossetti che escono da una finestra
 
 
-tecnologies: 
+tecnologie: 
 - blender
 - illustrator
 - photoshop

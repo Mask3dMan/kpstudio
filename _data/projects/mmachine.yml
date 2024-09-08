@@ -7,14 +7,14 @@ description:
   it: Memory Machine, una fotocamera istantanea di legno con uno schermo a e-ink a colori. Una fotocamera che ti fa riflettere sulla permanenza di una foto.
 
 projectdescription:
-  en: '<p>This projects starts way back in Univerity. During the "product design" course, we were asked to choose an object, without really any guidance in particular. I chose an old film camera, as I was really starting to appreciate photography, and what it meant to capture a moment, in those years.</p>
+  en: '<p>This projects starts way back in University. During the "product design" course, we were asked to choose an object, without really any guidance in particular. I chose an old film camera, as I was really starting to appreciate photography, and what it meant to capture a moment, in those years.</p>
   <p>The first half of the course was dedicated to the study of the object, how it relates to our perception, how it works, and how to operate it. Pretty ordinary stuff.</p>
   <p>Right after that, we were asked to design a brand new product which somehow transformed the old object. Firstly I thought of a digital camera that felt like an old film camera, with mechanical controls, and maybe film themed memory cards, but that felt a bit too… Safe?</p>
   <p>Back to the drawing board. I started thinking about what it means to take a photo. I started thinking about my photo library with 20k+ photos, a good part of it I didn’t really felt attached to. Beside a newfound decluttering urge, I started pondering about how photos are now a commodity, and how they are stored in the cloud, and how they are shared, and how they are forgotten.</p>
   <p>I wanted to make something to subvert this whole idea. A camera that could only take one photo at a time, and that would erase the previous one when a new one was taken. No storage, no live view, no memory card, just a color e-ink screen that can hold a picture indefinitely.</p>
   <p>And so, the Memory Machine was born. A camera that would make you think about the permanence of a photo, and how it’s not just a file in a folder, but a moment in time, that you can hold in your hands.</p>
   <p>Inspired both by old instant cameras, and by the wooden picture frames that my grandma used to have in her house, I wanted the Memory Machine to be as much a camera as a piece of furniture, looking right at home in a living room, or in a studio.</p>
-  <p>During the coruse, the camera was designed on paper, refined in Illustrator, and mocked up with cardboard and tape. I even did a rough render in Cinema4D, but due to time and technical constraints, it never managed to look as good as it deserved. So, years later, I decided to model it all again, in Blender this time, and give the attention it needed.</p>'
+  <p>During the course, the camera was designed on paper, refined in Illustrator, and mocked up with cardboard and tape. I even did a rough render in Cinema4D, but due to time and technical constraints, it never managed to look as good as it deserved. So, years later, I decided to model it all again, in Blender this time, and give the attention it needed.</p>'
   it: '<p>Questo progetto nasce durante I miei anni all’università. Durante il corso di “product design”, ci è stato chiesto di scegliere un oggetto, senza particolari indicazioni. Ho scelto una vecchia macchina fotografica a pellicola, poiché stavo iniziando a capire l’importanza della fotografia, e cosa significasse catturare un momento, in quegli anni.</p>
   <p>La prima metà del corso è stata dedicata allo studio dell’oggetto, come si relaziona alla nostra percezione, come funziona, e come si opera. Cose abbastanza ordinarie.</p>
   <p>Subito dopo, ci è stato chiesto di progettare un nuovo prodotto che trasformasse in qualche modo il vecchio oggetto. Inizialmente ho pensato a una fotocamera digitale che funzionasse come una vecchia fotocamera a pellicola, con controlli meccanici, e magari schede di memoria a tema rullino, ma mi sembrava un po’ troppo… Scontato?</p>
@@ -37,7 +37,7 @@ imgs:
   size:
   aspect: 1/1
   alt:
-    en: A dettail of the retractile lens system of the Memory Machine
+    en: A detail of the retractile lens system of the Memory Machine
     it: Dettaglio del sistema di obiettivo retrattile della Memory Machine
 - url: 4
   size:
@@ -49,7 +49,7 @@ imgs:
   size: full
   aspect: 1/1
   alt:
-    en: a dettail of the materials and finishing of the Memory Machine
+    en: a detail of the materials and finishing of the Memory Machine
     it: dettaglio dei materiali e delle finiture della Memory Machine
 - url: 3
   size:
@@ -61,10 +61,10 @@ imgs:
   size:
   aspect: 1/1
   alt:
-    en: dettail of the color e-ink display of the Memory Machine
+    en: detail of the color e-ink display of the Memory Machine
     it: dettaglio dello schermo a e-ink a colori della Memory Machine
 
-tecnologies: 
+technologies: 
 - blender
 - illustrator
 

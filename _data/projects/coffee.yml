@@ -1,10 +1,10 @@
 url: coffee
 title: 
   en: Mean coffee
-  it: Caffé nero 
+  it: Caffè nero 
 description: 
   en: &descen A grumpy cup of coffee, an illustration done in Photoshop and Illustrator.
-  it: &descit Una tazza di caffé arrabbiata, un'illustrazione fatta su Photoshop e Illustrator.
+  it: &descit Una tazza di caffè arrabbiata, un'illustrazione fatta su Photoshop e Illustrator.
 projectdescription:
   en: *descen
   it: *descit
@@ -14,7 +14,7 @@ imgs:
   aspect: 1/1
   alt: A grumpy cup of coffee
 
-tecnologies: 
+technologies: 
 - photoshop
 - illustrator
 

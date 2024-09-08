@@ -3,8 +3,8 @@ title:
   en: Minimal Casio Watches
   it: Orologi Casio Minimali
 description: 
-  en: &descen 'A minimalist graphical composition for what is a maximallist watch: the G-Shock.'
-  it: &descit 'Una composiozione grafica minimalista, per ciò che può essere considerato un orologio massimalista: il G-Shock'
+  en: &descen 'A minimalist graphical composition for what is a maximalist watch: the G-Shock.'
+  it: &descit 'Una composizione grafica minimalista, per ciò che può essere considerato un orologio massimalista: il G-Shock'
 projectdescription:
   en: *descen
   it: *descit
@@ -22,7 +22,7 @@ imgs:
     en: A minimal illustration of a Casio 
     it: Un'illustrazione minimalista di un Casio
 
-tecnologies: 
+technologies: 
 - illustrator
 
 category:
