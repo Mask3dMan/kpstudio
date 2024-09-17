@@ -34,7 +34,7 @@ layout: default
     style="aspect-ratio: {{ img.aspect }}; background-color:{{ site.data.colors[current_project][img.url] }}">
   
         <img
-        class="rounded-3xl object-cover"
+        class="rounded-3xl object-cover size-full"
         src="{{ '/assets/images/' | relative_url | append: page.url | append: img.url | append: '.jpg' }}"
         alt="{{img.alt[site.active_lang]}}"
         style="background-image: url('data:image/jpg;base64,{{ site.data.blur[current_project][img.url] }}'); background-repeat: no-repeat; background-size: cover;"
